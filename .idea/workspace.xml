@@ -4,14 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="13764756-3e34-46c6-abcd-d77f4754d3a1" name="Changes" comment="[Application] Cleaned the project structure and some minor fix to make the application run smoothly">
-      <change afterPath="$PROJECT_DIR$/app/Home/_layout.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Home/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Location/_layout.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Location/index.tsx" afterDir="false" />
+    <list default="true" id="13764756-3e34-46c6-abcd-d77f4754d3a1" name="Changes" comment="[Application] Messing around with basic navigation provided by Expo">
+      <change afterPath="$PROJECT_DIR$/app/(tabs)/_layout.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Home/_layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(tabs)/(home)/_layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Home/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(tabs)/(home)/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Location/_layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(tabs)/Location/_layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Location/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(tabs)/Location/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/_layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/_layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/index.tsx" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,6 +64,7 @@
       <recent name="$PROJECT_DIR$/app" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/(tabs)" />
       <recent name="$PROJECT_DIR$/app/Location" />
       <recent name="$PROJECT_DIR$/app/Home" />
       <recent name="$PROJECT_DIR$/app" />
@@ -84,7 +86,7 @@
       <option name="presentableId" value="Default" />
       <updated>1736590209488</updated>
       <workItem from="1736590210722" duration="24000" />
-      <workItem from="1736590238009" duration="7954000" />
+      <workItem from="1736590238009" duration="8391000" />
     </task>
     <task id="LOCAL-00001" summary="[Application] Resolving some minor issues on remote EAS build">
       <option name="closed" value="true" />
@@ -102,7 +104,15 @@
       <option name="project" value="LOCAL" />
       <updated>1736603968740</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="[Application] Messing around with basic navigation provided by Expo">
+      <option name="closed" value="true" />
+      <created>1736605692075</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1736605692075</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -122,6 +132,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="[Application] Resolving some minor issues on remote EAS build" />
     <MESSAGE value="[Application] Cleaned the project structure and some minor fix to make the application run smoothly" />
-    <option name="LAST_COMMIT_MESSAGE" value="[Application] Cleaned the project structure and some minor fix to make the application run smoothly" />
+    <MESSAGE value="[Application] Messing around with basic navigation provided by Expo" />
+    <option name="LAST_COMMIT_MESSAGE" value="[Application] Messing around with basic navigation provided by Expo" />
   </component>
 </project>

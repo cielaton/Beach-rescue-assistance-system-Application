@@ -1,15 +1,8 @@
-import { Text, View } from "react-native";
+import HomeScreen from "@/app/Home";
 
-export default function HomeScreen() {
-  return (
-    <View
-      style={{
-        flex: 1,
-        justifyContent: "center",
-        alignItems: "center",
-      }}
-    >
-      <Text>Edit app/index.tsx to edit this screen.</Text>
-    </View>
-  );
+const Index = () => {
+    // Using Home as the root screen
+    return <HomeScreen/>;
 }
+
+export default Index;

@@ -4,16 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="13764756-3e34-46c6-abcd-d77f4754d3a1" name="Changes" comment="[Navigation] Created a custom drawer for the drawer navigator">
-      <change afterPath="$PROJECT_DIR$/constants/colors.json" afterDir="false" />
+    <list default="true" id="13764756-3e34-46c6-abcd-d77f4754d3a1" name="Changes" comment="[Navigation] Separated the Drawer item into different component">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/(drawer)/Device-management/_layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(drawer)/Device/_layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/(drawer)/Device-management/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(drawer)/Device/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/(drawer)/Device-status/_layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(drawer)/Status/_layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/(drawer)/Device-status/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(drawer)/Status/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/(drawer)/_layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(drawer)/_layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pnpm-lock.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pnpm-lock.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,7 +85,7 @@
       <updated>1736590209488</updated>
       <workItem from="1736590210722" duration="24000" />
       <workItem from="1736590238009" duration="10702000" />
-      <workItem from="1736652917948" duration="7663000" />
+      <workItem from="1736652917948" duration="8958000" />
     </task>
     <task id="LOCAL-00001" summary="[Application] Resolving some minor issues on remote EAS build">
       <option name="closed" value="true" />
@@ -150,7 +143,15 @@
       <option name="project" value="LOCAL" />
       <updated>1736659761896</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="[Navigation] Separated the Drawer item into different component">
+      <option name="closed" value="true" />
+      <created>1736663709223</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1736663709223</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -175,6 +176,7 @@
     <MESSAGE value="[Navigation] Finally get the drawer navigation working with some configurations" />
     <MESSAGE value="[Navigation] Added other screens and appropriate navigation button" />
     <MESSAGE value="[Navigation] Created a custom drawer for the drawer navigator" />
-    <option name="LAST_COMMIT_MESSAGE" value="[Navigation] Created a custom drawer for the drawer navigator" />
+    <MESSAGE value="[Navigation] Separated the Drawer item into different component" />
+    <option name="LAST_COMMIT_MESSAGE" value="[Navigation] Separated the Drawer item into different component" />
   </component>
 </project>

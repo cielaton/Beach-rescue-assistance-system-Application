@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="13764756-3e34-46c6-abcd-d77f4754d3a1" name="Changes" comment="[Home] Created the main layout and added some separator components">
+    <list default="true" id="13764756-3e34-46c6-abcd-d77f4754d3a1" name="Changes" comment="[Home] Added the overall status indicator (Just a beautiful check mark)">
+      <change afterPath="$PROJECT_DIR$/app/(drawer)/Home/OverallStatus.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/(drawer)/Home/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(drawer)/Home/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/(drawer)/_layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(drawer)/_layout.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +88,7 @@
       <workItem from="1736590210722" duration="24000" />
       <workItem from="1736590238009" duration="10702000" />
       <workItem from="1736652917948" duration="15613000" />
-      <workItem from="1736688908906" duration="3370000" />
+      <workItem from="1736688908906" duration="4963000" />
     </task>
     <task id="LOCAL-00001" summary="[Application] Resolving some minor issues on remote EAS build">
       <option name="closed" value="true" />
@@ -176,7 +178,15 @@
       <option name="project" value="LOCAL" />
       <updated>1736670976196</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="[Home] Added the overall status indicator (Just a beautiful check mark)">
+      <option name="closed" value="true" />
+      <created>1736693530424</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1736693530424</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -205,6 +215,7 @@
     <MESSAGE value="[Navigation] Optimized the navigation drawer with tint active color and appropriate styles" />
     <MESSAGE value="[Home] Added a reusable Heading component" />
     <MESSAGE value="[Home] Created the main layout and added some separator components" />
-    <option name="LAST_COMMIT_MESSAGE" value="[Home] Created the main layout and added some separator components" />
+    <MESSAGE value="[Home] Added the overall status indicator (Just a beautiful check mark)" />
+    <option name="LAST_COMMIT_MESSAGE" value="[Home] Added the overall status indicator (Just a beautiful check mark)" />
   </component>
 </project>

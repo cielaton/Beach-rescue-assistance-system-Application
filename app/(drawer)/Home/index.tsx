@@ -3,7 +3,7 @@ import Heading from "@/components/Heading";
 import VerticalSeparator from "@/components/VerticalSeparator";
 import HorizontalSeparator from "@/components/HorizontalSeparator";
 import colors from "@/constants/colors.json"
-import {CheckCheck} from "lucide-react-native";
+import OverallStatus from "@/app/(drawer)/Home/OverallStatus";
 
 const HomeScreen = () => {
     return (
@@ -15,36 +15,8 @@ const HomeScreen = () => {
             <View style={styles.mainSection}>
                 <View style={styles.firstRow}>
                     <View style={styles.firstRowFirstColumn}>
-                        <View style={styles.firstRowFirstColumnFirstColumn}>
-                            <View style={{
-                                height: "60%",
-                                aspectRatio: 1,
-                                borderRadius: "100%",
-                                backgroundColor: 'rgba(166, 227, 161, 0.5)',
-                                marginLeft: 30,
-                                justifyContent: 'center',
-                                alignItems: 'center'
-                            }}>
-                                <View style={{
-                                    height: "80%",
-                                    aspectRatio: 1,
-                                    borderRadius: "100%",
-                                    backgroundColor: colors.mocha.colors.green.hex,
-                                    justifyContent: 'center',
-                                    alignItems: 'center'
-                                }}>
-                                    <View style={{
-                                        height: "60%",
-                                        aspectRatio: 1,
-                                        borderRadius: "100%",
-                                        backgroundColor: colors.latte.colors.base.hex,
-                                        justifyContent: 'center',
-                                        alignItems: 'center'
-                                    }}>
-                                        <CheckCheck size={30} color={colors.latte.colors.green.hex} />
-                                    </View>
-                                </View>
-                            </View>
+                        <View style={styles.overallStatusWrapper}>
+                            <OverallStatus/>
                         </View>
                         <HorizontalSeparator width={20}/>
                         <View style={styles.firstRowFirstColumnSecondColumn}></View>
@@ -89,11 +61,8 @@ const styles = StyleSheet.create({
         flex: 2 / 3,
         flexDirection: 'row'
     },
-    firstRowFirstColumnFirstColumn: {
-        flex: 0.5,
-        borderRadius: 15,
-        backgroundColor: colors.mocha.colors.base.hex,
-        justifyContent: 'center',
+    overallStatusWrapper: {
+        flex: 0.5
     },
     firstRowFirstColumnSecondColumn: {
         flex: 0.5,

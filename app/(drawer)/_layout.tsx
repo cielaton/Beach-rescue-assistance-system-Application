@@ -72,7 +72,7 @@ const DrawerLayout = () => {
                 borderRightColor: colors.latte.colors.surface1.hex,
                 borderRightWidth: 1,
                 backgroundColor: colors.latte.colors.mantle.hex,
-                width: '18%',
+                width: '16%',
             },
         }}/>
     </GestureHandlerRootView>

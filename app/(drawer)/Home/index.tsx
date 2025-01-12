@@ -4,14 +4,9 @@ import VerticalSeparator from "@/components/VerticalSeparator";
 import HorizontalSeparator from "@/components/HorizontalSeparator";
 import colors from "@/constants/colors.json"
 import OverallStatus from "@/app/(drawer)/Home/OverallStatus";
-import {PieChart} from "react-native-gifted-charts";
+import DonutChart from "@/app/(drawer)/Home/DonutChart";
 
 const HomeScreen = () => {
-    const pieChartData = [
-        {value: 25, color: colors.mocha.colors.green.hex},
-        {value: 0, color: colors.mocha.colors.yellow.hex},
-        {value: 0, color: colors.mocha.colors.red.hex},
-    ]
 
     return (
         <View style={styles.container}>
@@ -26,33 +21,8 @@ const HomeScreen = () => {
                             <OverallStatus/>
                         </View>
                         <HorizontalSeparator width={20}/>
-                        <View style={styles.firstRowFirstColumnSecondColumn}>
-                            <View style={{
-                                height: '80%',
-                                aspectRatio: 1,
-                                marginLeft: 30,
-                                justifyContent: 'center'
-                            }}>
-                                <PieChart
-                                    donut
-                                    radius={50} innerRadius={30} data={pieChartData}
-                                    centerLabelComponent={() => {
-                                        return <View style={{
-                                            justifyContent: 'center',
-                                            alignItems: 'center'
-                                        }}>
-                                            <Text style={{
-                                                fontSize: 20,
-                                                fontWeight: 'bold',
-                                                lineHeight: 20,
-                                            }}>25</Text>
-                                            <Text style={{
-                                                fontSize: 15,
-                                                lineHeight: 15,
-                                            }}>Total</Text>
-                                        </View>
-                                    }}/>
-                            </View>
+                        <View style={styles.donutChartWrapper}>
+                            <DonutChart />
                         </View>
                     </View>
                     <HorizontalSeparator width={20}/>
@@ -98,11 +68,8 @@ const styles = StyleSheet.create({
     overallStatusWrapper: {
         flex: 0.5
     },
-    firstRowFirstColumnSecondColumn: {
-        flex: 0.5,
-        borderRadius: 15,
-        backgroundColor: colors.latte.colors.base.hex,
-        justifyContent: 'center'
+    donutChartWrapper: {
+        flex: 0.5
     },
     firstRowSecondColumn: {
         flex: 1 / 3,

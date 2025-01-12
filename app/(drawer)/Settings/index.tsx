@@ -1,10 +1,10 @@
 import {StyleSheet, Text, View} from "react-native";
 
-const LocationScreen = () => {
-    return <View><Text>This is the Location screen</Text></View>
+const SettingsScreen= () => {
+    return <View><Text>This is the Settings screen</Text></View>
 }
 
-export default LocationScreen;
+export default SettingsScreen;
 
 const styles = StyleSheet.create({
     container: {

@@ -4,18 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="13764756-3e34-46c6-abcd-d77f4754d3a1" name="Changes" comment="[Navigation] Successfully implemented tab navigation">
-      <change afterPath="$PROJECT_DIR$/app/(drawer)/_layout.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/index.tsx" afterDir="false" />
+    <list default="true" id="13764756-3e34-46c6-abcd-d77f4754d3a1" name="Changes" comment="[Navigation] Finally get the drawer navigation working with some configurations">
+      <change afterPath="$PROJECT_DIR$/app/(drawer)/Device-management/_layout.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/(drawer)/Device-management/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/(drawer)/Device-status/_layout.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/(drawer)/Device-status/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/(drawer)/Settings/_layout.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/(drawer)/Settings/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/(tabs)/(home)/_layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(drawer)/Home/_layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/(tabs)/(home)/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(drawer)/Home/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/(tabs)/Location/_layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(drawer)/Location/_layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/(tabs)/Location/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(drawer)/Location/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/(tabs)/_layout.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/_layout.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pnpm-lock.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pnpm-lock.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/(drawer)/Location/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(drawer)/Location/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +48,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "/home/kiet/projects/working/Beach-rescue-assistance-system/Client/app/Home",
+    "last_opened_file_path": "/home/kiet/projects/working/Beach-rescue-assistance-system/Client/app/(drawer)/Settings",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -62,9 +59,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/(drawer)/Settings" />
+      <recent name="$PROJECT_DIR$/app/(drawer)/Device-status" />
+      <recent name="$PROJECT_DIR$/app/(drawer)/Device-management" />
       <recent name="$PROJECT_DIR$/app/Home" />
       <recent name="$PROJECT_DIR$/app/Location" />
-      <recent name="$PROJECT_DIR$/app" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/app/(drawer)" />
@@ -90,7 +89,8 @@
       <option name="presentableId" value="Default" />
       <updated>1736590209488</updated>
       <workItem from="1736590210722" duration="24000" />
-      <workItem from="1736590238009" duration="10393000" />
+      <workItem from="1736590238009" duration="10702000" />
+      <workItem from="1736652917948" duration="2210000" />
     </task>
     <task id="LOCAL-00001" summary="[Application] Resolving some minor issues on remote EAS build">
       <option name="closed" value="true" />
@@ -124,7 +124,15 @@
       <option name="project" value="LOCAL" />
       <updated>1736606140926</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="[Navigation] Finally get the drawer navigation working with some configurations">
+      <option name="closed" value="true" />
+      <created>1736608382313</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1736608382313</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -146,6 +154,7 @@
     <MESSAGE value="[Application] Cleaned the project structure and some minor fix to make the application run smoothly" />
     <MESSAGE value="[Application] Messing around with basic navigation provided by Expo" />
     <MESSAGE value="[Navigation] Successfully implemented tab navigation" />
-    <option name="LAST_COMMIT_MESSAGE" value="[Navigation] Successfully implemented tab navigation" />
+    <MESSAGE value="[Navigation] Finally get the drawer navigation working with some configurations" />
+    <option name="LAST_COMMIT_MESSAGE" value="[Navigation] Finally get the drawer navigation working with some configurations" />
   </component>
 </project>

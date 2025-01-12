@@ -1,10 +1,10 @@
 import {StyleSheet, Text, View} from "react-native";
 
-const LocationScreen = () => {
-    return <View><Text>This is the Location screen</Text></View>
+const DeviceManagementScreen= () => {
+    return <View><Text>This is the DeviceManagement screen</Text></View>
 }
 
-export default LocationScreen;
+export default DeviceManagementScreen;
 
 const styles = StyleSheet.create({
     container: {

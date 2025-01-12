@@ -55,6 +55,7 @@ const styles = StyleSheet.create({
         flexWrap: 'wrap',
         marginHorizontal: 20,
         fontSize: 30,
+        lineHeight: 30,
         fontWeight: 'bold',
         color: colors.mocha.colors.text.hex,
     }

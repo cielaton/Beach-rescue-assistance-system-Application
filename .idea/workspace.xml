@@ -4,15 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="13764756-3e34-46c6-abcd-d77f4754d3a1" name="Changes" comment="[Navigation] Finally get the drawer navigation working with some configurations">
-      <change afterPath="$PROJECT_DIR$/app/(drawer)/Device-management/_layout.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/(drawer)/Device-management/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/(drawer)/Device-status/_layout.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/(drawer)/Device-status/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/(drawer)/Settings/_layout.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/(drawer)/Settings/index.tsx" afterDir="false" />
+    <list default="true" id="13764756-3e34-46c6-abcd-d77f4754d3a1" name="Changes" comment="[Navigation] Added other screens and appropriate navigation button">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/(drawer)/Location/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(drawer)/Location/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/(drawer)/_layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(drawer)/_layout.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +84,7 @@
       <updated>1736590209488</updated>
       <workItem from="1736590210722" duration="24000" />
       <workItem from="1736590238009" duration="10702000" />
-      <workItem from="1736652917948" duration="2210000" />
+      <workItem from="1736652917948" duration="3873000" />
     </task>
     <task id="LOCAL-00001" summary="[Application] Resolving some minor issues on remote EAS build">
       <option name="closed" value="true" />
@@ -132,7 +126,15 @@
       <option name="project" value="LOCAL" />
       <updated>1736608382313</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="[Navigation] Added other screens and appropriate navigation button">
+      <option name="closed" value="true" />
+      <created>1736658098110</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1736658098110</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -155,6 +157,7 @@
     <MESSAGE value="[Application] Messing around with basic navigation provided by Expo" />
     <MESSAGE value="[Navigation] Successfully implemented tab navigation" />
     <MESSAGE value="[Navigation] Finally get the drawer navigation working with some configurations" />
-    <option name="LAST_COMMIT_MESSAGE" value="[Navigation] Finally get the drawer navigation working with some configurations" />
+    <MESSAGE value="[Navigation] Added other screens and appropriate navigation button" />
+    <option name="LAST_COMMIT_MESSAGE" value="[Navigation] Added other screens and appropriate navigation button" />
   </component>
 </project>

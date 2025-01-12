@@ -69,6 +69,8 @@ const DrawerLayout = () => {
     return <GestureHandlerRootView style={{flex: 1}}>
         <Drawer initialRouteName={"Home"} drawerContent={CustomDrawerContent} screenOptions={{
             drawerType: 'permanent', headerShown: false, drawerStyle: {
+                borderRightColor: colors.latte.colors.surface1.hex,
+                borderRightWidth: 1,
                 backgroundColor: colors.latte.colors.mantle.hex,
                 width: '18%',
             },

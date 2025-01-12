@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="13764756-3e34-46c6-abcd-d77f4754d3a1" name="Changes" comment="[Navigation] Optimized the navigation drawer with tint active color and appropriate styles">
-      <change afterPath="$PROJECT_DIR$/components/Heading.tsx" afterDir="false" />
+    <list default="true" id="13764756-3e34-46c6-abcd-d77f4754d3a1" name="Changes" comment="[Home] Added a reusable Heading component">
+      <change afterPath="$PROJECT_DIR$/components/HorizontalSeparator.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/VerticalSeparator.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/(drawer)/Home/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(drawer)/Home/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/(drawer)/_layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(drawer)/_layout.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,7 +87,7 @@
       <updated>1736590209488</updated>
       <workItem from="1736590210722" duration="24000" />
       <workItem from="1736590238009" duration="10702000" />
-      <workItem from="1736652917948" duration="11341000" />
+      <workItem from="1736652917948" duration="14734000" />
     </task>
     <task id="LOCAL-00001" summary="[Application] Resolving some minor issues on remote EAS build">
       <option name="closed" value="true" />
@@ -161,7 +161,15 @@
       <option name="project" value="LOCAL" />
       <updated>1736664834051</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="[Home] Added a reusable Heading component">
+      <option name="closed" value="true" />
+      <created>1736667405745</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1736667405745</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -188,6 +196,7 @@
     <MESSAGE value="[Navigation] Created a custom drawer for the drawer navigator" />
     <MESSAGE value="[Navigation] Separated the Drawer item into different component" />
     <MESSAGE value="[Navigation] Optimized the navigation drawer with tint active color and appropriate styles" />
-    <option name="LAST_COMMIT_MESSAGE" value="[Navigation] Optimized the navigation drawer with tint active color and appropriate styles" />
+    <MESSAGE value="[Home] Added a reusable Heading component" />
+    <option name="LAST_COMMIT_MESSAGE" value="[Home] Added a reusable Heading component" />
   </component>
 </project>

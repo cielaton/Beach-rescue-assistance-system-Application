@@ -1,4 +1,5 @@
-import {StyleSheet, View} from "react-native";
+import {useState} from "react";
+import {Image, StyleSheet, View} from "react-native";
 
 import Heading from "@/components/Heading";
 import VerticalSeparator from "@/components/VerticalSeparator";
@@ -7,10 +8,11 @@ import colors from "@/constants/colors.json"
 import OverallStatusHome from "@/app/(drawer)/Home/OverallStatus.Home";
 import DonutChartHome from "@/app/(drawer)/Home/DonutChart.Home";
 import MapHome from "@/app/(drawer)/Home/Map.Home";
+import {Picker} from "@react-native-picker/picker";
 
 
 const HomeScreen = () => {
-
+    const [selectedValue, setSelectedValue] = useState("")
     return (
         <View style={styles.container}>
             <View style={styles.headingWrapper}>
@@ -29,7 +31,25 @@ const HomeScreen = () => {
                         </View>
                     </View>
                     <HorizontalSeparator width={20}/>
-                    <View style={styles.firstRowSecondColumn}></View>
+                    <View style={styles.firstRowSecondColumn}>
+                        <Picker
+                            style={{
+                                marginHorizontal: 15,
+                            }}
+                            mode={"dropdown"}
+                            selectedValue={selectedValue}
+                            onValueChange={(itemValue, itemIndex) =>
+                                setSelectedValue(itemValue)
+                            }>
+                            <Picker.Item label="My Khe Beach" value="My Khe Beach"/>
+                            <Picker.Item label="Others" value="Others"/>
+                        </Picker>
+                        <Image style={{
+                            alignSelf: 'center',
+                            height: '50%',
+                            resizeMode: 'contain'
+                        }} source={require("@/assets/images/safe-area.png")} />
+                    </View>
                 </View>
                 <VerticalSeparator height={20}/>
                 <View style={styles.secondRow}>

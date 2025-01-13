@@ -4,21 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="13764756-3e34-46c6-abcd-d77f4754d3a1" name="Changes" comment="[Home] Configured some Mapbox dependencies">
-      <change afterPath="$PROJECT_DIR$/app/(drawer)/Home/Map.Home.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+    <list default="true" id="13764756-3e34-46c6-abcd-d77f4754d3a1" name="Changes" comment="[Home] Added a fully working Mapview in home screen">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/android/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/android/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/android/gradle.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/app.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/(drawer)/Home/DonutChart.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(drawer)/Home/DonutChart.Home.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/(drawer)/Home/OverallStatus.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(drawer)/Home/OverallStatus.Home.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/(drawer)/Home/Map.Home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(drawer)/Home/Map.Home.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/(drawer)/Home/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(drawer)/Home/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/adaptive-icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/favicon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/partial-react-logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/react-logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/react-logo@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/react-logo@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/splash-icon.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ios/Beachrescueassistancesystem.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Beachrescueassistancesystem.xcodeproj/project.pbxproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Podfile" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Podfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Beachrescueassistancesystem/Info.plist" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Beachrescueassistancesystem/Info.plist" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pnpm-lock.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pnpm-lock.yaml" afterDir="false" />
     </list>
@@ -101,7 +101,8 @@
       <workItem from="1736590238009" duration="10702000" />
       <workItem from="1736652917948" duration="15613000" />
       <workItem from="1736688908906" duration="8919000" />
-      <workItem from="1736736788817" duration="5001000" />
+      <workItem from="1736736788817" duration="7353000" />
+      <workItem from="1736775841563" duration="1382000" />
     </task>
     <task id="LOCAL-00001" summary="[Application] Resolving some minor issues on remote EAS build">
       <option name="closed" value="true" />
@@ -223,7 +224,15 @@
       <option name="project" value="LOCAL" />
       <updated>1736739121852</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="[Home] Added a fully working Mapview in home screen">
+      <option name="closed" value="true" />
+      <created>1736741970179</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1736741970179</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -256,6 +265,7 @@
     <MESSAGE value="[Home] Separate the overall status to a different file and shrink the navigation drawer" />
     <MESSAGE value="[Home] Added a donut chart to visually display the total number of working devices" />
     <MESSAGE value="[Home] Configured some Mapbox dependencies" />
-    <option name="LAST_COMMIT_MESSAGE" value="[Home] Configured some Mapbox dependencies" />
+    <MESSAGE value="[Home] Added a fully working Mapview in home screen" />
+    <option name="LAST_COMMIT_MESSAGE" value="[Home] Added a fully working Mapview in home screen" />
   </component>
 </project>

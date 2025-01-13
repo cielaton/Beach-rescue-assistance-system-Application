@@ -1,5 +1,5 @@
 import {useState} from "react";
-import {Image, StyleSheet, View} from "react-native";
+import {StyleSheet, View} from "react-native";
 
 import Heading from "@/components/Heading";
 import VerticalSeparator from "@/components/VerticalSeparator";
@@ -8,11 +8,10 @@ import colors from "@/constants/colors.json"
 import OverallStatusHome from "@/app/(drawer)/Home/OverallStatus.Home";
 import DonutChartHome from "@/app/(drawer)/Home/DonutChart.Home";
 import MapHome from "@/app/(drawer)/Home/Map.Home";
-import {Picker} from "@react-native-picker/picker";
+import SafeAreaHome from "@/app/(drawer)/Home/SafeAreaHome";
 
 
 const HomeScreen = () => {
-    const [selectedValue, setSelectedValue] = useState("")
     return (
         <View style={styles.container}>
             <View style={styles.headingWrapper}>
@@ -31,24 +30,8 @@ const HomeScreen = () => {
                         </View>
                     </View>
                     <HorizontalSeparator width={20}/>
-                    <View style={styles.firstRowSecondColumn}>
-                        <Picker
-                            style={{
-                                marginHorizontal: 15,
-                            }}
-                            mode={"dropdown"}
-                            selectedValue={selectedValue}
-                            onValueChange={(itemValue, itemIndex) =>
-                                setSelectedValue(itemValue)
-                            }>
-                            <Picker.Item label="My Khe Beach" value="My Khe Beach"/>
-                            <Picker.Item label="Others" value="Others"/>
-                        </Picker>
-                        <Image style={{
-                            alignSelf: 'center',
-                            height: '50%',
-                            resizeMode: 'contain'
-                        }} source={require("@/assets/images/safe-area.png")} />
+                    <View style={styles.safeAreaWrapper}>
+                        <SafeAreaHome />
                     </View>
                 </View>
                 <VerticalSeparator height={20}/>
@@ -95,10 +78,8 @@ const styles = StyleSheet.create({
     donutChartWrapper: {
         flex: 0.5
     },
-    firstRowSecondColumn: {
-        flex: 1 / 3,
-        borderRadius: 15,
-        backgroundColor: colors.latte.colors.base.hex
+    safeAreaWrapper: {
+        flex: 1 / 3
     },
 
     secondRow: {

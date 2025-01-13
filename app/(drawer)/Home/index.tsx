@@ -7,7 +7,8 @@ import colors from "@/constants/colors.json"
 import OverallStatusHome from "@/app/(drawer)/Home/OverallStatus.Home";
 import DonutChartHome from "@/app/(drawer)/Home/DonutChart.Home";
 import MapHome from "@/app/(drawer)/Home/Map.Home";
-import SafeAreaHome from "@/app/(drawer)/Home/SafeAreaHome";
+import SafeAreaHome from "@/app/(drawer)/Home/SafeArea.Home";
+import RescueTeamHome from "@/app/(drawer)/Home/RescueTeam.Home";
 
 
 const HomeScreen = () => {
@@ -39,7 +40,9 @@ const HomeScreen = () => {
                         <MapHome/>
                     </View>
                     <HorizontalSeparator width={20}/>
-                    <View style={styles.secondRowSecondColumn}></View>
+                    <View style={styles.rescueTeamWrapper}>
+                        <RescueTeamHome/>
+                    </View>
                 </View>
             </View>
         </View>
@@ -89,9 +92,7 @@ const styles = StyleSheet.create({
     mapWrapper: {
         flex: 2 / 3
     },
-    secondRowSecondColumn: {
+    rescueTeamWrapper: {
         flex: 1 / 3,
-        borderRadius: 15,
-        backgroundColor: colors.latte.colors.base.hex
     }
 })

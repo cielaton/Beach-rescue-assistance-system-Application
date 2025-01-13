@@ -7,9 +7,7 @@ const SafeAreaHome = () => {
     const [selectedValue, setSelectedValue] = useState("")
     return <View style={styles.container}>
         <Picker
-            style={{
-                marginHorizontal: 15,
-            }}
+            style={styles.picker}
             mode={"dropdown"}
             selectedValue={selectedValue}
             onValueChange={(itemValue, itemIndex) =>
@@ -33,5 +31,9 @@ const styles = StyleSheet.create({
         flex: 1,
         borderRadius: 15,
         backgroundColor: colors.latte.colors.base.hex
+    },
+    picker: {
+        marginHorizontal: 15,
+        color: colors.mocha.colors.base.hex,
     }
 })

@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="13764756-3e34-46c6-abcd-d77f4754d3a1" name="Changes" comment="[Home] Temporarily added a section of Safe area preview, with react-native-picker">
-      <change afterPath="$PROJECT_DIR$/app/(drawer)/Home/SafeAreaHome.tsx" afterDir="false" />
+    <list default="true" id="13764756-3e34-46c6-abcd-d77f4754d3a1" name="Changes" comment="[Home] Migrate the safe area section to another file">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/(drawer)/Home/Map.Home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(drawer)/Home/Map.Home.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/(drawer)/Home/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(drawer)/Home/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -89,7 +89,7 @@
       <workItem from="1736652917948" duration="15613000" />
       <workItem from="1736688908906" duration="8919000" />
       <workItem from="1736736788817" duration="7353000" />
-      <workItem from="1736775841563" duration="2172000" />
+      <workItem from="1736775841563" duration="2784000" />
     </task>
     <task id="LOCAL-00001" summary="[Application] Resolving some minor issues on remote EAS build">
       <option name="closed" value="true" />
@@ -227,7 +227,15 @@
       <option name="project" value="LOCAL" />
       <updated>1736777364073</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="[Home] Migrate the safe area section to another file">
+      <option name="closed" value="true" />
+      <created>1736778355382</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1736778355382</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -262,6 +270,7 @@
     <MESSAGE value="[Home] Configured some Mapbox dependencies" />
     <MESSAGE value="[Home] Added a fully working Mapview in home screen" />
     <MESSAGE value="[Home] Temporarily added a section of Safe area preview, with react-native-picker" />
-    <option name="LAST_COMMIT_MESSAGE" value="[Home] Temporarily added a section of Safe area preview, with react-native-picker" />
+    <MESSAGE value="[Home] Migrate the safe area section to another file" />
+    <option name="LAST_COMMIT_MESSAGE" value="[Home] Migrate the safe area section to another file" />
   </component>
 </project>

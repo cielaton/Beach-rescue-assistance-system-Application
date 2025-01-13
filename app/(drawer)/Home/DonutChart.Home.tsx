@@ -15,7 +15,7 @@ const LegendItem = ({color, description}: { color: string, description: string }
     </View>
 }
 
-const DonutChart = () => {
+const DonutChartHome = () => {
     return <View style={styles.container}>
         <View style={styles.chartContainer}>
             <PieChart
@@ -36,7 +36,7 @@ const DonutChart = () => {
     </View>
 }
 
-export default DonutChart;
+export default DonutChartHome;
 
 const styles = StyleSheet.create({
     container: {

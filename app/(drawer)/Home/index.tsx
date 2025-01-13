@@ -1,10 +1,13 @@
-import {StyleSheet, Text, View} from "react-native";
+import {StyleSheet, View} from "react-native";
+
 import Heading from "@/components/Heading";
 import VerticalSeparator from "@/components/VerticalSeparator";
 import HorizontalSeparator from "@/components/HorizontalSeparator";
 import colors from "@/constants/colors.json"
-import OverallStatus from "@/app/(drawer)/Home/OverallStatus";
-import DonutChart from "@/app/(drawer)/Home/DonutChart";
+import OverallStatusHome from "@/app/(drawer)/Home/OverallStatus.Home";
+import DonutChartHome from "@/app/(drawer)/Home/DonutChart.Home";
+import MapHome from "@/app/(drawer)/Home/Map.Home";
+
 
 const HomeScreen = () => {
 
@@ -18,11 +21,11 @@ const HomeScreen = () => {
                 <View style={styles.firstRow}>
                     <View style={styles.firstRowFirstColumn}>
                         <View style={styles.overallStatusWrapper}>
-                            <OverallStatus/>
+                            <OverallStatusHome/>
                         </View>
                         <HorizontalSeparator width={20}/>
                         <View style={styles.donutChartWrapper}>
-                            <DonutChart />
+                            <DonutChartHome/>
                         </View>
                     </View>
                     <HorizontalSeparator width={20}/>
@@ -30,8 +33,9 @@ const HomeScreen = () => {
                 </View>
                 <VerticalSeparator height={20}/>
                 <View style={styles.secondRow}>
-                    <View style={styles.secondRowFirstColumn}></View>
-                    <View/>
+                    <View style={styles.mapWrapper}>
+                        <MapHome/>
+                    </View>
                     <HorizontalSeparator width={20}/>
                     <View style={styles.secondRowSecondColumn}></View>
                 </View>
@@ -82,10 +86,8 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         marginBottom: 30,
     },
-    secondRowFirstColumn: {
-        flex: 2 / 3,
-        borderRadius: 15,
-        backgroundColor: 'green'
+    mapWrapper: {
+        flex: 2 / 3
     },
     secondRowSecondColumn: {
         flex: 1 / 3,

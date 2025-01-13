@@ -2,7 +2,7 @@ import {StyleSheet, Text, View} from "react-native";
 import colors from "@/constants/colors.json";
 import {CheckCheck} from "lucide-react-native";
 
-const OverallStatus = () => {
+const OverallStatusHome = () => {
     return <View style={styles.container}>
         <View style={styles.outerGreenCircle}>
             <View style={styles.innerGreenCircle}>
@@ -15,7 +15,7 @@ const OverallStatus = () => {
     </View>
 }
 
-export default OverallStatus;
+export default OverallStatusHome;
 
 const styles = StyleSheet.create({
     container: {

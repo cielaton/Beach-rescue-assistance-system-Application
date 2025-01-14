@@ -1,7 +1,17 @@
 import {StyleSheet, Text, View} from "react-native";
+import Mapbox, {Camera} from "@rnmapbox/maps";
 
 const LocationScreen = () => {
-    return <View><Text>This is the Location screen</Text></View>
+    return <View style={styles.container}>
+        <Mapbox.MapView
+            scaleBarEnabled={false}
+            logoEnabled={false}
+            attributionEnabled={false}
+            compassEnabled={false}
+            style={styles.map}>
+            <Camera centerCoordinate={[108.249169, 16.062597]} zoomLevel={14} />
+        </Mapbox.MapView>
+    </View>
 }
 
 export default LocationScreen;
@@ -9,7 +19,11 @@ export default LocationScreen;
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        alignItems: 'center',
-        justifyContent: 'center',
+        backgroundColor: 'green'
+    },
+    map: {
+        flex: 1,
+        borderRadius: 15,
+        overflow: 'hidden'
     }
 })

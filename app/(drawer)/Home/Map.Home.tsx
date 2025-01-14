@@ -23,7 +23,6 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
         borderRadius: 15,
-        backgroundColor: 'green'
     },
     map: {
         flex: 1,

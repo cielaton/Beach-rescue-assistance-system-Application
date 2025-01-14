@@ -31,7 +31,7 @@ const HomeScreen = () => {
                     </View>
                     <HorizontalSeparator width={20}/>
                     <View style={styles.safeAreaWrapper}>
-                        <SafeAreaHome />
+                        <SafeAreaHome/>
                     </View>
                 </View>
                 <VerticalSeparator height={20}/>

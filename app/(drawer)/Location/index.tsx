@@ -1,4 +1,4 @@
-import {StyleSheet, Text, View} from "react-native";
+import {StyleSheet, View} from "react-native";
 import Mapbox, {Camera} from "@rnmapbox/maps";
 
 const LocationScreen = () => {
@@ -9,7 +9,7 @@ const LocationScreen = () => {
             attributionEnabled={false}
             compassEnabled={false}
             style={styles.map}>
-            <Camera centerCoordinate={[108.249169, 16.062597]} zoomLevel={14} />
+            <Camera animationMode={"none"} centerCoordinate={[108.249169, 16.062597]} zoomLevel={14}/>
         </Mapbox.MapView>
     </View>
 }

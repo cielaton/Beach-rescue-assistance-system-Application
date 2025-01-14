@@ -4,40 +4,16 @@ import colors from "@/constants/colors.json";
 import TableHeaderStatus from "@/app/(drawer)/Status/TableHeader.Status";
 import TableRowStatus from "@/app/(drawer)/Status/TableRow.Status";
 
-const data = [
-    {
-        id: 1,
-        longitude: 108.2232,
-        latitude: 16.2232,
-        active: true,
-        uptime: "1 hour 13 minutes",
-        boundary: "inside"
-    },
-    {
-        id: 2,
-        longitude: 108.2232,
-        latitude: 16.2232,
-        active: true,
-        uptime: "1 hour 13 minutes",
-        boundary: "inside"
-    },
-    {
-        id: 3,
-        longitude: 108.2232,
-        latitude: 16.2232,
-        active: true,
-        uptime: "1 hour 13 minutes",
-        boundary: "inside"
-    },
-    {
-        id: 4,
+const data = Array.from(Array(25).keys()).map((item) => {
+    return {
+        id: item,
         longitude: 108.2232,
         latitude: 16.2232,
         active: true,
         uptime: "1 hour 13 minutes",
         boundary: "inside"
     }
-]
+})
 
 const DeviceStatusScreen = () => {
     return <View style={styles.container}>
@@ -52,8 +28,7 @@ const DeviceStatusScreen = () => {
                 data={data}
                 renderItem={({item}) =>
                     <TableRowStatus id={item.id} longitude={item.longitude} latitude={item.latitude}
-                                    active={item.active} uptime={item.uptime}
-                                    boundary={item.boundary}
+                                    active={item.active} uptime={item.uptime} boundary={item.boundary}
                     />
                 }
             />

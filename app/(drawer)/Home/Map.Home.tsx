@@ -1,6 +1,5 @@
-import Mapbox from "@rnmapbox/maps";
+import Mapbox, {Camera} from "@rnmapbox/maps";
 import {StyleSheet, View} from "react-native";
-import {Camera} from "@rnmapbox/maps";
 
 Mapbox.setAccessToken(process.env.EXPO_PUBLIC_OPEN_MAP_PUBLIC_KEY!).then(() => console.log("[Mapbox] Loaded Access Token")).catch(error => console.log("[Mapbox] Failed to load Access Token", error));
 
@@ -12,7 +11,7 @@ const MapHome = () => {
             attributionEnabled={false}
             compassEnabled={false}
             style={styles.map}>
-            <Camera centerCoordinate={[108.249169, 16.062597]} zoomLevel={14} />
+            <Camera animationMode={"none"} centerCoordinate={[108.249169, 16.062597]} zoomLevel={14}/>
         </Mapbox.MapView>
     </View>
 }

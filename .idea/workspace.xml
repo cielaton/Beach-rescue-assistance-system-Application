@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="13764756-3e34-46c6-abcd-d77f4754d3a1" name="Changes" comment="[Status] Temporarily complete the table contents of the device status screen">
-      <change afterPath="$PROJECT_DIR$/app/(drawer)/Status/TableRow.Status.tsx" afterDir="false" />
+    <list default="true" id="13764756-3e34-46c6-abcd-d77f4754d3a1" name="Changes" comment="[Status] Migrate the row item into another file and clean it up">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/(drawer)/Home/Map.Home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(drawer)/Home/Map.Home.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/(drawer)/Location/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(drawer)/Location/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/(drawer)/Status/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(drawer)/Status/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -100,7 +101,7 @@
       <workItem from="1736775841563" duration="6029000" />
       <workItem from="1736831079479" duration="1000" />
       <workItem from="1736831327606" duration="6307000" />
-      <workItem from="1736837647963" duration="1214000" />
+      <workItem from="1736837647963" duration="1584000" />
     </task>
     <task id="LOCAL-00001" summary="[Application] Resolving some minor issues on remote EAS build">
       <option name="closed" value="true" />
@@ -286,7 +287,15 @@
       <option name="project" value="LOCAL" />
       <updated>1736837788770</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="[Status] Migrate the row item into another file and clean it up">
+      <option name="closed" value="true" />
+      <created>1736867688623</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1736867688623</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -327,6 +336,8 @@
     <MESSAGE value="[Location] Added a map to the Location screen and some minor change" />
     <MESSAGE value="[Status] Added the heading and table header for the Status screen" />
     <MESSAGE value="[Status] Temporarily complete the table contents of the device status screen" />
-    <option name="LAST_COMMIT_MESSAGE" value="[Status] Temporarily complete the table contents of the device status screen" />
+    <MESSAGE value="[Status] Migrate the row item into another file and optimized it" />
+    <MESSAGE value="[Status] Migrate the row item into another file and clean it up" />
+    <option name="LAST_COMMIT_MESSAGE" value="[Status] Migrate the row item into another file and clean it up" />
   </component>
 </project>

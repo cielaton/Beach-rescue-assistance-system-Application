@@ -4,16 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="13764756-3e34-46c6-abcd-d77f4754d3a1" name="Changes" comment="[Location] Added a map to the Location screen and some minor change">
-      <change afterPath="$PROJECT_DIR$/app/(drawer)/Status/TabletHeader.Status.tsx" afterDir="false" />
+    <list default="true" id="13764756-3e34-46c6-abcd-d77f4754d3a1" name="Changes" comment="[Status] Added the heading and table header for the Status screen">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/(drawer)/Home/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(drawer)/Home/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/(drawer)/Status/TabletHeader.Status.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(drawer)/Status/TableHeader.Status.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/(drawer)/Status/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(drawer)/Status/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FormatOnSaveOptions">
+    <option name="myRunOnSave" value="true" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -30,6 +33,9 @@
     &quot;accountId&quot;: &quot;6ddcd8ed-b4eb-4004-958f-ec651f8c3e84&quot;
   }
 }</component>
+  <component name="OptimizeOnSaveOptions">
+    <option name="myRunOnSave" value="true" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 4
@@ -44,13 +50,15 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "/home/kiet/projects/working/Beach-rescue-assistance-system/Client/app/(drawer)/Settings",
+    "last_opened_file_path": "/home/kiet/.local/share/pnpm/global/5/node_modules/prettier/bin",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.sourceCode",
+    "prettierjs.PrettierConfiguration.Package": "/home/kiet/.local/share/pnpm/global/5/node_modules/prettier/bin",
+    "rearrange.code.on.save": "true",
+    "settings.editor.selected.configurable": "settings.javascript.prettier",
     "ts.external.directory.path": "/home/kiet/projects/working/Beach-rescue-assistance-system/Client/node_modules/typescript/lib"
   }
 }]]></component>
@@ -92,7 +100,8 @@
       <workItem from="1736736788817" duration="7353000" />
       <workItem from="1736775841563" duration="6029000" />
       <workItem from="1736831079479" duration="1000" />
-      <workItem from="1736831327606" duration="4976000" />
+      <workItem from="1736831327606" duration="6307000" />
+      <workItem from="1736837647963" duration="111000" />
     </task>
     <task id="LOCAL-00001" summary="[Application] Resolving some minor issues on remote EAS build">
       <option name="closed" value="true" />
@@ -262,7 +271,15 @@
       <option name="project" value="LOCAL" />
       <updated>1736832888517</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="[Status] Added the heading and table header for the Status screen">
+      <option name="closed" value="true" />
+      <created>1736836339860</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1736836339860</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -301,6 +318,7 @@
     <MESSAGE value="[Home] Added a random beach location for the overview map and minor changes" />
     <MESSAGE value="[Home] Added the Rescue Team section and some minor changes in SafeArea component alignment" />
     <MESSAGE value="[Location] Added a map to the Location screen and some minor change" />
-    <option name="LAST_COMMIT_MESSAGE" value="[Location] Added a map to the Location screen and some minor change" />
+    <MESSAGE value="[Status] Added the heading and table header for the Status screen" />
+    <option name="LAST_COMMIT_MESSAGE" value="[Status] Added the heading and table header for the Status screen" />
   </component>
 </project>

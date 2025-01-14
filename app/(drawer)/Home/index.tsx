@@ -59,11 +59,11 @@ const styles = StyleSheet.create({
     },
 
     headingWrapper: {
-        flex: 0.15
+        flex: 0.13
     },
 
     mainSection: {
-        flex: 0.85
+        flex: 0.87
     },
 
     firstRow: {

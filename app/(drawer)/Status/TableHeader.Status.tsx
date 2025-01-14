@@ -1,7 +1,7 @@
 import {StyleSheet, Text, View} from "react-native";
 import colors from "@/constants/colors.json"
 
-const TabletHeaderStatus = () => {
+const TableHeaderStatus = () => {
     return <View style={styles.container}>
         <View style={styles.deviceWrapper}>
             <Text style={styles.text}>Device</Text>
@@ -23,13 +23,14 @@ const TabletHeaderStatus = () => {
         </View>
     </View>
 }
-export default TabletHeaderStatus;
+export default TableHeaderStatus;
 
 const styles = StyleSheet.create({
     container: {
-        height: 40,
+        flex: 1,
         flexDirection: 'row',
-        justifyContent: 'space-between'
+        justifyContent: 'space-between',
+        alignItems: 'center'
     },
     deviceWrapper: {
         width: '8%',
@@ -51,6 +52,7 @@ const styles = StyleSheet.create({
     },
     text: {
         fontSize: 15,
+        lineHeight: 15,
         opacity: 0.8,
         color: colors.mocha.colors.base.hex,
     }

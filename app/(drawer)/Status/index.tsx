@@ -1,18 +1,10 @@
 import {FlatList, StyleSheet, Text, View} from "react-native";
 import Heading from "@/components/Heading";
 import colors from "@/constants/colors.json";
-import TabletHeaderStatus from "@/app/(drawer)/Status/TabletHeader.Status";
+import TableHeaderStatus from "@/app/(drawer)/Status/TableHeader.Status";
+import {Check} from "lucide-react-native";
 
 const data = [
-    {
-        // The default id for table header
-        id: 0,
-        longitude: 108.2232,
-        latitude: 16.2232,
-        active: true,
-        uptime: "1 hour 13 minutes",
-        boundary: "inside"
-    },
     {
         id: 1,
         longitude: 108.2232,
@@ -56,61 +48,67 @@ const TableRow = ({id, longitude, latitude, active, uptime, boundary}: {
     boundary: string
 }) => {
     // temporary object to hold the table row value
-    let tempObject;
-    if (id === 0) {
-        tempObject = {
-            id: "",
-            longitude: "Longitude",
-            latitude: "Latitude",
-            active: "Active",
-            uptime: "Uptime",
-            boundary: "Boundary"
-        }
-    } else {
-        tempObject = {
-            id: id,
-            longitude: longitude,
-            latitude: latitude,
-            active: active,
-            uptime: uptime,
-            boundary: boundary
-        }
-    }
-
     return <View style={{
         height: 40,
         flexDirection: 'row',
-        justifyContent: 'space-between'
+        justifyContent: 'space-between',
+        alignItems: 'center'
     }}>
         <View style={{
             width: '8%',
         }}>
-            <Text>{tempObject.id}</Text>
+            <View style={{
+                height: '80%',
+                aspectRatio: 1,
+                borderRadius: '100%',
+                justifyContent: 'center',
+                alignItems: 'center',
+                backgroundColor: 'rgba(166, 227, 161, 0.5)'
+            }}>
+                <Text style={{
+                    fontSize: 15,
+                    fontWeight: 'bold',
+                    color: colors.latte.colors.green.hex
+                }}>{id}</Text>
+            </View>
         </View>
         <View style={{
             width: '15%',
         }}>
-            <Text>{tempObject.longitude}</Text>
+            <Text>{longitude}</Text>
         </View>
         <View style={{
             width: '15%',
         }}>
-            <Text>{tempObject.latitude}</Text>
+            <Text>{latitude}</Text>
         </View>
         <View style={{
             width: '8%',
         }}>
-            <Text>{tempObject.active}</Text>
+
+            <View style={
+                {
+                    height: '60%',
+                    aspectRatio: 1,
+                    borderRadius: '100%',
+                    backgroundColor: colors.latte.colors.green.hex,
+                    justifyContent: 'center',
+                    alignItems: 'center'
+                }}>
+                <Check size={15} color={colors.latte.colors.base.hex}/>
+            </View>
         </View>
         <View style={{
             width: '20%',
         }}>
-            <Text>{tempObject.uptime}</Text>
+            <Text>{uptime}</Text>
         </View>
         <View style={{
             width: '10%',
         }}>
-            <Text>{tempObject.boundary}</Text>
+            <Text style={{
+                color: colors.latte.colors.green.hex
+            }}>{boundary}</Text>
         </View>
     </View>
 }
@@ -120,19 +118,20 @@ const DeviceStatusScreen = () => {
         <View style={styles.headingWrapper}>
             <Heading title={"Device Status"}/>
         </View>
-        <TabletHeaderStatus />
-        <FlatList
-            style={{
-                flex: 0.85,
-            }}
-            data={data}
-            renderItem={({item}) =>
-                <TableRow id={item.id} longitude={item.longitude} latitude={item.latitude}
-                          active={item.active} uptime={item.uptime}
-                          boundary={item.boundary}
-                />
-            }
-        />
+        <View style={styles.tableHeaderWrapper}>
+            <TableHeaderStatus/>
+        </View>
+        <View style={styles.flatListWrapper}>
+            <FlatList
+                data={data}
+                renderItem={({item}) =>
+                    <TableRow id={item.id} longitude={item.longitude} latitude={item.latitude}
+                              active={item.active} uptime={item.uptime}
+                              boundary={item.boundary}
+                    />
+                }
+            />
+        </View>
     </View>
 }
 
@@ -145,6 +144,13 @@ const styles = StyleSheet.create({
         backgroundColor: colors.latte.colors.mantle.hex
     },
     headingWrapper: {
-        flex: 0.15
+        flex: 0.13
+    },
+    tableHeaderWrapper: {
+        flex: 0.05,
+        justifyContent: "center",
+    },
+    flatListWrapper: {
+        flex: 0.82
     }
 })

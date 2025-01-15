@@ -34,9 +34,11 @@ const styles = StyleSheet.create({
     },
     activeWrapper: {
         width: '15%',
+        alignItems: 'center'
     },
     removeWrapper: {
         width: '18%',
+        alignItems: 'center'
     },
 
     tableHeader: {

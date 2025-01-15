@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="13764756-3e34-46c6-abcd-d77f4754d3a1" name="Changes" comment="[Status] Migrate the row item into another file and clean it up">
+    <list default="true" id="13764756-3e34-46c6-abcd-d77f4754d3a1" name="Changes" comment="[Application] Dynamically generate the mockup device status and disable map zoom animation">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/(drawer)/Home/Map.Home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(drawer)/Home/Map.Home.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/(drawer)/Location/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(drawer)/Location/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/(drawer)/Status/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(drawer)/Status/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/(drawer)/Device/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(drawer)/Device/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/(drawer)/Status/TableRow.Status.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(drawer)/Status/TableRow.Status.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,23 +44,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "/home/kiet/.local/share/pnpm/global/5/node_modules/prettier/bin",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "prettierjs.PrettierConfiguration.Package": "/home/kiet/.local/share/pnpm/global/5/node_modules/prettier/bin",
-    "rearrange.code.on.save": "true",
-    "settings.editor.selected.configurable": "settings.javascript.prettier",
-    "ts.external.directory.path": "/home/kiet/projects/working/Beach-rescue-assistance-system/Client/node_modules/typescript/lib"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/kiet/.local/share/pnpm/global/5/node_modules/prettier/bin&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/home/kiet/.local/share/pnpm/global/5/node_modules/prettier/bin&quot;,
+    &quot;rearrange.code.on.save&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.javascript.prettier&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/home/kiet/projects/working/Beach-rescue-assistance-system/Client/node_modules/typescript/lib&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/app/(drawer)/Settings" />
@@ -101,7 +100,8 @@
       <workItem from="1736775841563" duration="6029000" />
       <workItem from="1736831079479" duration="1000" />
       <workItem from="1736831327606" duration="6307000" />
-      <workItem from="1736837647963" duration="1584000" />
+      <workItem from="1736837647963" duration="2333000" />
+      <workItem from="1736914474053" duration="1274000" />
     </task>
     <task id="LOCAL-00001" summary="[Application] Resolving some minor issues on remote EAS build">
       <option name="closed" value="true" />
@@ -295,7 +295,15 @@
       <option name="project" value="LOCAL" />
       <updated>1736867688623</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="[Application] Dynamically generate the mockup device status and disable map zoom animation">
+      <option name="closed" value="true" />
+      <created>1736868067449</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1736868067449</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -313,7 +321,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="[Application] Resolving some minor issues on remote EAS build" />
     <MESSAGE value="[Application] Cleaned the project structure and some minor fix to make the application run smoothly" />
     <MESSAGE value="[Application] Messing around with basic navigation provided by Expo" />
     <MESSAGE value="[Navigation] Successfully implemented tab navigation" />
@@ -338,6 +345,7 @@
     <MESSAGE value="[Status] Temporarily complete the table contents of the device status screen" />
     <MESSAGE value="[Status] Migrate the row item into another file and optimized it" />
     <MESSAGE value="[Status] Migrate the row item into another file and clean it up" />
-    <option name="LAST_COMMIT_MESSAGE" value="[Status] Migrate the row item into another file and clean it up" />
+    <MESSAGE value="[Application] Dynamically generate the mockup device status and disable map zoom animation" />
+    <option name="LAST_COMMIT_MESSAGE" value="[Application] Dynamically generate the mockup device status and disable map zoom animation" />
   </component>
 </project>

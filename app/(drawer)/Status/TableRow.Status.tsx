@@ -43,7 +43,7 @@ export default TableRowStatus;
 
 const styles = StyleSheet.create({
     container: {
-        height: 40,
+        height: 45,
         flexDirection: 'row',
         justifyContent: 'space-between',
         alignItems: 'center'
@@ -52,7 +52,7 @@ const styles = StyleSheet.create({
         width: '8%',
     },
     deviceCircle: {
-        height: '80%',
+        height: '70%',
         aspectRatio: 1,
         borderRadius: '100%',
         justifyContent: 'center',
@@ -74,7 +74,7 @@ const styles = StyleSheet.create({
         width: '8%',
     },
     activeCircle: {
-        height: '60%',
+        height: '50%',
         aspectRatio: 1,
         borderRadius: '100%',
         backgroundColor: colors.latte.colors.green.hex,

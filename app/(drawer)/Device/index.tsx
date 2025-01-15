@@ -1,7 +1,13 @@
-import {StyleSheet, Text, View} from "react-native";
+import {StyleSheet, View} from "react-native";
+import Heading from "@/components/Heading";
+import colors from "@/constants/colors.json";
 
-const DeviceManagementScreen= () => {
-    return <View><Text>This is the DeviceManagement screen</Text></View>
+const DeviceManagementScreen = () => {
+    return <View style={styles.container}>
+        <View style={styles.headingWrapper}>
+            <Heading title={"Device Management"}/>
+        </View>
+    </View>
 }
 
 export default DeviceManagementScreen;
@@ -9,7 +15,10 @@ export default DeviceManagementScreen;
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        alignItems: 'center',
-        justifyContent: 'center',
+        paddingHorizontal: 30,
+        backgroundColor: colors.latte.colors.mantle.hex
+    },
+    headingWrapper: {
+        flex: 0.13
     }
 })

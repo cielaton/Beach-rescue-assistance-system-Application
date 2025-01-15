@@ -3,21 +3,17 @@ import Heading from "@/components/Heading";
 import colors from "@/constants/colors.json";
 import HorizontalSeparator from "@/components/HorizontalSeparator";
 import VerticalSeparator from "@/components/VerticalSeparator";
+import UserDevice from "@/app/(drawer)/Device/UserDevice/UserDevice.Device";
 
 const DeviceManagementScreen = () => {
     return <View style={styles.container}>
         <View style={styles.headingWrapper}>
             <Heading title={"Device Management"}/>
         </View>
-        <View style={{
-            flex: 0.87,
-            flexDirection: 'row'
-        }}>
-            <View style={{
-                flex: 0.5,
-                borderRadius: 15,
-                backgroundColor: colors.latte.colors.base.hex
-            }}></View>
+        <View style={styles.deviceInfoContainer}>
+            <View style={styles.userDeviceWrapper}>
+                <UserDevice/>
+            </View>
             <HorizontalSeparator width={20}/>
             <View style={{
                 flex: 0.5,
@@ -51,5 +47,12 @@ const styles = StyleSheet.create({
     },
     headingWrapper: {
         flex: 0.13
+    },
+    deviceInfoContainer: {
+        flex: 0.87,
+        flexDirection: 'row'
+    },
+    userDeviceWrapper: {
+        flex: 0.5
     }
 })

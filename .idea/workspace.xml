@@ -4,14 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="13764756-3e34-46c6-abcd-d77f4754d3a1" name="Changes" comment="[Device] Added the heading and improve the Status table element height">
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/kiet.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/git_toolbox_blame.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/git_toolbox_prj.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/prettier.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+    <list default="true" id="13764756-3e34-46c6-abcd-d77f4754d3a1" name="Changes" comment="[Device] Added a basic component structure for the device screen">
+      <change afterPath="$PROJECT_DIR$/app/(drawer)/Device/UserDevice/TableHeader.UserDevice.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/(drawer)/Device/UserDevice/UserDevice.Device.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/(drawer)/Device/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(drawer)/Device/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -76,11 +72,11 @@
       <recent name="$PROJECT_DIR$/app/Location" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/(drawer)/Device/UserDevice" />
       <recent name="$PROJECT_DIR$/app/(drawer)" />
       <recent name="$PROJECT_DIR$/app" />
       <recent name="$PROJECT_DIR$/app/(tabs)" />
       <recent name="$PROJECT_DIR$/app/Location" />
-      <recent name="$PROJECT_DIR$/app/Home" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -110,7 +106,8 @@
       <workItem from="1736914474053" duration="2238000" />
       <workItem from="1736917024730" duration="24000" />
       <workItem from="1736917056965" duration="117000" />
-      <workItem from="1736917181679" duration="1437000" />
+      <workItem from="1736917181679" duration="2525000" />
+      <workItem from="1736932784263" duration="812000" />
     </task>
     <task id="LOCAL-00001" summary="[Application] Resolving some minor issues on remote EAS build">
       <option name="closed" value="true" />
@@ -320,7 +317,15 @@
       <option name="project" value="LOCAL" />
       <updated>1736916247159</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="[Device] Added a basic component structure for the device screen">
+      <option name="closed" value="true" />
+      <created>1736918655180</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1736918655180</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -338,7 +343,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="[Application] Messing around with basic navigation provided by Expo" />
     <MESSAGE value="[Navigation] Successfully implemented tab navigation" />
     <MESSAGE value="[Navigation] Finally get the drawer navigation working with some configurations" />
     <MESSAGE value="[Navigation] Added other screens and appropriate navigation button" />
@@ -363,6 +367,7 @@
     <MESSAGE value="[Status] Migrate the row item into another file and clean it up" />
     <MESSAGE value="[Application] Dynamically generate the mockup device status and disable map zoom animation" />
     <MESSAGE value="[Device] Added the heading and improve the Status table element height" />
-    <option name="LAST_COMMIT_MESSAGE" value="[Device] Added the heading and improve the Status table element height" />
+    <MESSAGE value="[Device] Added a basic component structure for the device screen" />
+    <option name="LAST_COMMIT_MESSAGE" value="[Device] Added a basic component structure for the device screen" />
   </component>
 </project>

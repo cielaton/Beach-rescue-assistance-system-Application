@@ -16,7 +16,7 @@ const TableRowUserDevice = ({id, uptime, active}: { id: number, uptime: string, 
             <Text>{uptime}</Text>
         </View>
         <View style={styles.active}>
-            <View style={styles.activeCircle}>
+            <View style={styles.switchWrapper}>
                 <Switch
                     trackColor={{false: colors.mocha.colors.base.hex, true: colors.mocha.colors.subtext1.hex}}
                     thumbColor={enabled ? colors.latte.colors.mauve.hex : colors.latte.colors.crust.hex}
@@ -70,7 +70,7 @@ const styles = StyleSheet.create({
         width: '15%',
         alignItems: 'center'
     },
-    activeCircle: {
+    switchWrapper: {
         height: '50%',
         aspectRatio: 1,
         borderRadius: '100%',

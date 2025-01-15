@@ -4,6 +4,7 @@ import colors from "@/constants/colors.json";
 import HorizontalSeparator from "@/components/HorizontalSeparator";
 import VerticalSeparator from "@/components/VerticalSeparator";
 import UserDevice from "@/app/(drawer)/Device/UserDevice/UserDevice.Device";
+import DeviceInfo from "@/app/(drawer)/Device/DeviceInfo.Device";
 
 const DeviceManagementScreen = () => {
     return <View style={styles.container}>
@@ -15,15 +16,9 @@ const DeviceManagementScreen = () => {
                 <UserDevice/>
             </View>
             <HorizontalSeparator width={20}/>
-            <View style={{
-                flex: 0.5,
-                borderRadius: 15,
-            }}>
-                <View style={{
-                    flex: 2 / 7,
-                    borderRadius: 15,
-                    backgroundColor: colors.mocha.colors.base.hex
-                }}>
+            <View style={styles.deviceInfoAndRescueTeamDeviceWrapper}>
+                <View style={styles.deviceInfoWrapper}>
+                    <DeviceInfo/>
                 </View>
                 <VerticalSeparator height={20}/>
                 <View style={{
@@ -54,5 +49,11 @@ const styles = StyleSheet.create({
     },
     userDeviceWrapper: {
         flex: 0.5
+    },
+    deviceInfoAndRescueTeamDeviceWrapper: {
+        flex: 0.5,
+    },
+    deviceInfoWrapper: {
+        flex: 2 / 7,
     }
 })

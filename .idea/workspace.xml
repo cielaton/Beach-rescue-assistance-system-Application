@@ -4,11 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="13764756-3e34-46c6-abcd-d77f4754d3a1" name="Changes" comment="[Device] Refactored the DeviceInfo component">
-      <change afterPath="$PROJECT_DIR$/app/(drawer)/Device/RescueTeam.Device.tsx" afterDir="false" />
+    <list default="true" id="13764756-3e34-46c6-abcd-d77f4754d3a1" name="Changes" comment="[Device] Moved the rescue team to another file">
+      <change afterPath="$PROJECT_DIR$/app/(drawer)/Device/RescueTeam/RescueTeam.Device.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/(drawer)/Device/RescueTeam/TableHeader.RescueTeam.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/(drawer)/Device/RescueTeam/TableRow.RescueTeam.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/(drawer)/Device/RescueTeam.Device.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/(drawer)/Device/UserDevice/UserDevice.Device.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(drawer)/Device/UserDevice/UserDevice.Device.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/(drawer)/Device/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(drawer)/Device/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,11 +75,11 @@
       <recent name="$PROJECT_DIR$/app/Location" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/(drawer)/Device/RescueTeam" />
       <recent name="$PROJECT_DIR$/app/(drawer)/Device/UserDevice" />
       <recent name="$PROJECT_DIR$/app/(drawer)" />
       <recent name="$PROJECT_DIR$/app" />
       <recent name="$PROJECT_DIR$/app/(tabs)" />
-      <recent name="$PROJECT_DIR$/app/Location" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -108,7 +111,7 @@
       <workItem from="1736917056965" duration="117000" />
       <workItem from="1736917181679" duration="2525000" />
       <workItem from="1736932784263" duration="6226000" />
-      <workItem from="1736998108438" duration="4458000" />
+      <workItem from="1736998108438" duration="8733000" />
     </task>
     <task id="LOCAL-00001" summary="[Application] Resolving some minor issues on remote EAS build">
       <option name="closed" value="true" />
@@ -366,7 +369,15 @@
       <option name="project" value="LOCAL" />
       <updated>1737012093308</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="[Device] Moved the rescue team to another file">
+      <option name="closed" value="true" />
+      <created>1737013124253</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1737013124253</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -384,7 +395,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="[Navigation] Optimized the navigation drawer with tint active color and appropriate styles" />
     <MESSAGE value="[Home] Added a reusable Heading component" />
     <MESSAGE value="[Home] Created the main layout and added some separator components" />
     <MESSAGE value="[Home] Added the overall status indicator (Just a beautiful check mark)" />
@@ -409,6 +419,7 @@
     <MESSAGE value="[Device] Start to work on the Device info section, added the heading and some information components" />
     <MESSAGE value="[Device] Formed the basic structure and style of the device info section, will need to improve a bit" />
     <MESSAGE value="[Device] Refactored the DeviceInfo component" />
-    <option name="LAST_COMMIT_MESSAGE" value="[Device] Refactored the DeviceInfo component" />
+    <MESSAGE value="[Device] Moved the rescue team to another file" />
+    <option name="LAST_COMMIT_MESSAGE" value="[Device] Moved the rescue team to another file" />
   </component>
 </project>

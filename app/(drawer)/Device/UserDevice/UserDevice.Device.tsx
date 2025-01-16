@@ -3,7 +3,6 @@ import colors from "@/constants/colors.json";
 import TableHeaderUserDevice from "@/app/(drawer)/Device/UserDevice/TableHeader.UserDevice";
 import TableRowUserDevice from "@/app/(drawer)/Device/UserDevice/TableRow.UserDevice";
 
-
 const data = Array.from(Array(25).keys()).map((item) => {
     return {
         id: item,

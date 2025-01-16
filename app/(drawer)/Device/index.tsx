@@ -5,7 +5,7 @@ import HorizontalSeparator from "@/components/HorizontalSeparator";
 import VerticalSeparator from "@/components/VerticalSeparator";
 import UserDevice from "@/app/(drawer)/Device/UserDevice/UserDevice.Device";
 import DeviceInfo from "@/app/(drawer)/Device/DeviceInfo.Device";
-import RescueTeamDevice from "@/app/(drawer)/Device/RescueTeam.Device";
+import RescueTeamDevice from "@/app/(drawer)/Device/RescueTeam/RescueTeam.Device";
 
 const DeviceManagementScreen = () => {
     return <View style={styles.container}>

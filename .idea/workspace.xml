@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="13764756-3e34-46c6-abcd-d77f4754d3a1" name="Changes" comment="[Device] Added a table row component for the user device along with mockup device data and minor optimization for table heading">
-      <change afterPath="$PROJECT_DIR$/app/(drawer)/Device/DeviceInfo.Device.tsx" afterDir="false" />
+    <list default="true" id="13764756-3e34-46c6-abcd-d77f4754d3a1" name="Changes" comment="[Device] Start to work on the Device info section, added the heading and some information components">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/(drawer)/Device/UserDevice/TableRow.UserDevice.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(drawer)/Device/UserDevice/TableRow.UserDevice.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/(drawer)/Device/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(drawer)/Device/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/(drawer)/Device/DeviceInfo.Device.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(drawer)/Device/DeviceInfo.Device.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,7 +105,8 @@
       <workItem from="1736917024730" duration="24000" />
       <workItem from="1736917056965" duration="117000" />
       <workItem from="1736917181679" duration="2525000" />
-      <workItem from="1736932784263" duration="5568000" />
+      <workItem from="1736932784263" duration="6226000" />
+      <workItem from="1736998108438" duration="2928000" />
     </task>
     <task id="LOCAL-00001" summary="[Application] Resolving some minor issues on remote EAS build">
       <option name="closed" value="true" />
@@ -341,7 +340,15 @@
       <option name="project" value="LOCAL" />
       <updated>1736935078438</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="[Device] Start to work on the Device info section, added the heading and some information components">
+      <option name="closed" value="true" />
+      <created>1736939408973</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1736939408973</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -359,7 +366,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="[Navigation] Added other screens and appropriate navigation button" />
     <MESSAGE value="[Navigation] Created a custom drawer for the drawer navigator" />
     <MESSAGE value="[Navigation] Separated the Drawer item into different component" />
     <MESSAGE value="[Navigation] Optimized the navigation drawer with tint active color and appropriate styles" />
@@ -384,6 +390,7 @@
     <MESSAGE value="[Device] Added a basic component structure for the device screen" />
     <MESSAGE value="[Device] Just added a basic header for the user device table and re-organize the file structure" />
     <MESSAGE value="[Device] Added a table row component for the user device along with mockup device data and minor optimization for table heading" />
-    <option name="LAST_COMMIT_MESSAGE" value="[Device] Added a table row component for the user device along with mockup device data and minor optimization for table heading" />
+    <MESSAGE value="[Device] Start to work on the Device info section, added the heading and some information components" />
+    <option name="LAST_COMMIT_MESSAGE" value="[Device] Start to work on the Device info section, added the heading and some information components" />
   </component>
 </project>

@@ -4,14 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="13764756-3e34-46c6-abcd-d77f4754d3a1" name="Changes" comment="[Device] Moved the rescue team to another file">
-      <change afterPath="$PROJECT_DIR$/app/(drawer)/Device/RescueTeam/RescueTeam.Device.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/(drawer)/Device/RescueTeam/TableHeader.RescueTeam.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/(drawer)/Device/RescueTeam/TableRow.RescueTeam.tsx" afterDir="false" />
+    <list default="true" id="13764756-3e34-46c6-abcd-d77f4754d3a1" name="Changes" comment="[Device] Added the mockup data, a FlatList to render the list of rescuer along with table row component">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/(drawer)/Device/RescueTeam.Device.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/(drawer)/Device/UserDevice/UserDevice.Device.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(drawer)/Device/UserDevice/UserDevice.Device.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/(drawer)/Device/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(drawer)/Device/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/(drawer)/Settings/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(drawer)/Settings/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,7 +106,7 @@
       <workItem from="1736917056965" duration="117000" />
       <workItem from="1736917181679" duration="2525000" />
       <workItem from="1736932784263" duration="6226000" />
-      <workItem from="1736998108438" duration="8733000" />
+      <workItem from="1736998108438" duration="10483000" />
     </task>
     <task id="LOCAL-00001" summary="[Application] Resolving some minor issues on remote EAS build">
       <option name="closed" value="true" />
@@ -377,7 +372,15 @@
       <option name="project" value="LOCAL" />
       <updated>1737013124253</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="[Device] Added the mockup data, a FlatList to render the list of rescuer along with table row component">
+      <option name="closed" value="true" />
+      <created>1737018365147</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1737018365147</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -395,7 +398,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="[Home] Added a reusable Heading component" />
     <MESSAGE value="[Home] Created the main layout and added some separator components" />
     <MESSAGE value="[Home] Added the overall status indicator (Just a beautiful check mark)" />
     <MESSAGE value="[Home] Separate the overall status to a different file and shrink the navigation drawer" />
@@ -420,6 +422,7 @@
     <MESSAGE value="[Device] Formed the basic structure and style of the device info section, will need to improve a bit" />
     <MESSAGE value="[Device] Refactored the DeviceInfo component" />
     <MESSAGE value="[Device] Moved the rescue team to another file" />
-    <option name="LAST_COMMIT_MESSAGE" value="[Device] Moved the rescue team to another file" />
+    <MESSAGE value="[Device] Added the mockup data, a FlatList to render the list of rescuer along with table row component" />
+    <option name="LAST_COMMIT_MESSAGE" value="[Device] Added the mockup data, a FlatList to render the list of rescuer along with table row component" />
   </component>
 </project>

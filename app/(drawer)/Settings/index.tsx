@@ -1,6 +1,8 @@
-import {Image, StyleSheet, Text, View} from "react-native";
+import {StyleSheet, View} from "react-native";
 import colors from "@/constants/colors.json"
 import Heading from "@/components/Heading";
+import UserInfoSettings from "@/app/(drawer)/Settings/UserInfo.Settings";
+import SettingOption from "@/app/(drawer)/Settings/SettingOption.Settings"
 
 const SettingsScreen = () => {
     return <View style={styles.container}>
@@ -8,22 +10,10 @@ const SettingsScreen = () => {
             <Heading title={"Settings"}/>
         </View>
         <View style={styles.userInfoWrapper}>
-            <View style={styles.imageWrapper}>
-                <Image style={{height: "100%", width: "100%"}}
-                       source={require("@/assets/images/avatar.jpeg")}/>
-            </View>
-            <View style={{marginLeft: 20}}>
-                <Text style={{
-                    fontSize: 25,
-                    fontWeight: '500',
-                    color: colors.mocha.colors.base.hex
-                }}>Nguyen Van A</Text>
-                <Text style={{
-                    fontSize: 20,
-                    color: colors.mocha.colors.base.hex,
-                    opacity: 0.7
-                }}>Rescuer</Text>
-            </View>
+            <UserInfoSettings/>
+        </View>
+        <View style={styles.settingOptionsWrapper}>
+            <SettingOption/>
         </View>
     </View>
 }
@@ -42,15 +32,9 @@ const styles = StyleSheet.create({
         alignItems: 'center'
     },
     userInfoWrapper: {
-        flex: 0.2,
-        flexDirection: 'row',
+        flex: 0.2
     },
-    imageWrapper: {
-        height: "80%",
-        alignItems: 'center',
-        justifyContent: 'center',
-        aspectRatio: 1,
-        overflow: 'hidden',
-        borderRadius: "100%"
+    settingOptionsWrapper: {
+        flex: 0.3,
     }
 })

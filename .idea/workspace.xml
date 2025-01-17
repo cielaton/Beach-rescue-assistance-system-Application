@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="13764756-3e34-46c6-abcd-d77f4754d3a1" name="Changes" comment="[Device] Added the mockup data, a FlatList to render the list of rescuer along with table row component">
+    <list default="true" id="13764756-3e34-46c6-abcd-d77f4754d3a1" name="Changes" comment="[Settings] Start to work on Setting screen, added the heading and basic user info">
+      <change afterPath="$PROJECT_DIR$/app/(drawer)/Settings/SettingOption.Settings.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/(drawer)/Settings/UserInfo.Settings.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/(drawer)/Settings/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(drawer)/Settings/index.tsx" afterDir="false" />
     </list>
@@ -106,7 +108,9 @@
       <workItem from="1736917056965" duration="117000" />
       <workItem from="1736917181679" duration="2525000" />
       <workItem from="1736932784263" duration="6226000" />
-      <workItem from="1736998108438" duration="10483000" />
+      <workItem from="1736998108438" duration="11819000" />
+      <workItem from="1737089191825" duration="3218000" />
+      <workItem from="1737095905103" duration="869000" />
     </task>
     <task id="LOCAL-00001" summary="[Application] Resolving some minor issues on remote EAS build">
       <option name="closed" value="true" />
@@ -380,7 +384,15 @@
       <option name="project" value="LOCAL" />
       <updated>1737018365147</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="[Settings] Start to work on Setting screen, added the heading and basic user info">
+      <option name="closed" value="true" />
+      <created>1737020124151</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1737020124151</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -398,7 +410,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="[Home] Created the main layout and added some separator components" />
     <MESSAGE value="[Home] Added the overall status indicator (Just a beautiful check mark)" />
     <MESSAGE value="[Home] Separate the overall status to a different file and shrink the navigation drawer" />
     <MESSAGE value="[Home] Added a donut chart to visually display the total number of working devices" />
@@ -423,6 +434,7 @@
     <MESSAGE value="[Device] Refactored the DeviceInfo component" />
     <MESSAGE value="[Device] Moved the rescue team to another file" />
     <MESSAGE value="[Device] Added the mockup data, a FlatList to render the list of rescuer along with table row component" />
-    <option name="LAST_COMMIT_MESSAGE" value="[Device] Added the mockup data, a FlatList to render the list of rescuer along with table row component" />
+    <MESSAGE value="[Settings] Start to work on Setting screen, added the heading and basic user info" />
+    <option name="LAST_COMMIT_MESSAGE" value="[Settings] Start to work on Setting screen, added the heading and basic user info" />
   </component>
 </project>

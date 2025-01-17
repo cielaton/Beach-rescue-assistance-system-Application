@@ -22,7 +22,7 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
     },
     imageWrapper: {
-        height: "70%",
+        height: "80%",
         alignItems: 'center',
         justifyContent: 'center',
         aspectRatio: 1,

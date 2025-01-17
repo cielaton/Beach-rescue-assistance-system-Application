@@ -1,15 +1,14 @@
 import {StyleSheet, Text, TouchableOpacity, View} from "react-native";
 import colors from "@/constants/colors.json";
-import {Languages} from "lucide-react-native";
 
-const SettingOption = () => {
+const SettingOption = ({Icon, optionName, optionValue}: { Icon: any, optionName: string, optionValue: string }) => {
     return <TouchableOpacity style={styles.container}>
         <View style={styles.iconContainer}>
-            <Languages size={20} color={colors.mocha.colors.base.hex}/>
+            <Icon size={20} color={colors.mocha.colors.base.hex}/>
         </View>
         <View style={styles.textContainer}>
-            <Text style={styles.optionName}>Language</Text>
-            <Text style={styles.optionValue}>English</Text>
+            <Text style={styles.optionName}>{optionName}</Text>
+            <Text style={styles.optionValue}>{optionValue}</Text>
         </View>
     </TouchableOpacity>
 }
@@ -18,8 +17,9 @@ export default SettingOption;
 
 const styles = StyleSheet.create({
     container: {
+        alignItems: 'center',
         height: 50,
-        flexDirection: 'row'
+        flexDirection: 'row',
     },
     iconContainer: {
         height: "80%",

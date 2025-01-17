@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="13764756-3e34-46c6-abcd-d77f4754d3a1" name="Changes" comment="[Settings] Optimized the setting option components, added some mockup options">
+    <list default="true" id="13764756-3e34-46c6-abcd-d77f4754d3a1" name="Changes" comment="[Settings] Optimized the setting option components, added some mockup options and optimized the User Info section">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/(drawer)/Settings/SettingOption.Settings.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(drawer)/Settings/SettingOption.Settings.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/(drawer)/Settings/UserInfo.Settings.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(drawer)/Settings/UserInfo.Settings.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/(drawer)/Settings/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(drawer)/Settings/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -110,7 +108,7 @@
       <workItem from="1736932784263" duration="6226000" />
       <workItem from="1736998108438" duration="11819000" />
       <workItem from="1737089191825" duration="3218000" />
-      <workItem from="1737095905103" duration="3063000" />
+      <workItem from="1737095905103" duration="4840000" />
     </task>
     <task id="LOCAL-00001" summary="[Application] Resolving some minor issues on remote EAS build">
       <option name="closed" value="true" />
@@ -408,7 +406,15 @@
       <option name="project" value="LOCAL" />
       <updated>1737099017111</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="[Settings] Optimized the setting option components, added some mockup options and optimized the User Info section">
+      <option name="closed" value="true" />
+      <created>1737099033306</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1737099033306</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -426,7 +432,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="[Home] Added a donut chart to visually display the total number of working devices" />
     <MESSAGE value="[Home] Configured some Mapbox dependencies" />
     <MESSAGE value="[Home] Added a fully working Mapview in home screen" />
     <MESSAGE value="[Home] Temporarily added a section of Safe area preview, with react-native-picker" />
@@ -451,6 +456,7 @@
     <MESSAGE value="[Settings] Start to work on Setting screen, added the heading and basic user info" />
     <MESSAGE value="[Settings] Optimized the user info section and added the setting option" />
     <MESSAGE value="[Settings] Optimized the setting option components, added some mockup options" />
-    <option name="LAST_COMMIT_MESSAGE" value="[Settings] Optimized the setting option components, added some mockup options" />
+    <MESSAGE value="[Settings] Optimized the setting option components, added some mockup options and optimized the User Info section" />
+    <option name="LAST_COMMIT_MESSAGE" value="[Settings] Optimized the setting option components, added some mockup options and optimized the User Info section" />
   </component>
 </project>

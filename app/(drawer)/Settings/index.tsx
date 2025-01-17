@@ -1,4 +1,4 @@
-import {StyleSheet, View} from "react-native";
+import {StyleSheet, Text, TouchableOpacity, View} from "react-native";
 import colors from "@/constants/colors.json"
 import Heading from "@/components/Heading";
 import UserInfoSettings from "@/app/(drawer)/Settings/UserInfo.Settings";
@@ -25,6 +25,9 @@ const SettingsScreen = () => {
             <HorizontalLine/>
             <SettingOption Icon={Sun} optionName={"Theme"} optionValue={"Light"}/>
         </View>
+        <TouchableOpacity style={styles.logOutContainer}>
+            <Text style={styles.logOutText}>Log Out</Text>
+        </TouchableOpacity>
     </View>
 }
 
@@ -55,5 +58,18 @@ const styles = StyleSheet.create({
         height: 1,
         width: '100%',
         backgroundColor: colors.latte.colors.surface0.hex,
+    },
+    logOutContainer: {
+        marginHorizontal: "35%",
+        borderRadius: 10,
+        justifyContent: 'center',
+        alignItems: 'center',
+        flex: 0.06,
+        backgroundColor: colors.mocha.colors.red.hex
+    },
+    logOutText: {
+        color: colors.mocha.colors.base.hex,
+        fontSize: 16,
+        fontWeight: '600'
     }
 })

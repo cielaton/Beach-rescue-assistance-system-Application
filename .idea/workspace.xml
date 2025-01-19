@@ -5,8 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="13764756-3e34-46c6-abcd-d77f4754d3a1" name="Changes" comment="[Settings] Optimized the setting option components, added some mockup options and optimized the User Info section">
+      <change afterPath="$PROJECT_DIR$/api/context/Device.context.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/context/SafeArea.context.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/(drawer)/Settings/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(drawer)/Settings/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,11 +74,11 @@
       <recent name="$PROJECT_DIR$/app/Location" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/api/fetch" />
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/app/(drawer)/Device/RescueTeam" />
       <recent name="$PROJECT_DIR$/app/(drawer)/Device/UserDevice" />
       <recent name="$PROJECT_DIR$/app/(drawer)" />
-      <recent name="$PROJECT_DIR$/app" />
-      <recent name="$PROJECT_DIR$/app/(tabs)" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -109,6 +113,11 @@
       <workItem from="1736998108438" duration="11819000" />
       <workItem from="1737089191825" duration="3218000" />
       <workItem from="1737095905103" duration="4840000" />
+      <workItem from="1737120209223" duration="54000" />
+      <workItem from="1737169053151" duration="305000" />
+      <workItem from="1737202654677" duration="11000" />
+      <workItem from="1737253175789" duration="1000" />
+      <workItem from="1737267942295" duration="3354000" />
     </task>
     <task id="LOCAL-00001" summary="[Application] Resolving some minor issues on remote EAS build">
       <option name="closed" value="true" />

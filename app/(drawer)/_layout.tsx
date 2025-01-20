@@ -5,7 +5,8 @@ import {StyleSheet, View} from "react-native";
 import {useState} from "react";
 import {Box, CircleAlert, Home, LocateFixed, Settings} from "lucide-react-native";
 import colors from "@/constants/colors.json"
-import {rgbaColor} from "react-native-reanimated/lib/typescript/Colors";
+import {DeviceContextProvider} from "@/api/context/Device.context";
+import {SafeAreaContextProvider} from "@/api/context/SafeArea.context";
 
 const CustomDrawerItem = ({Icon, labels, index, drawerItemState, styles, setDrawerItemState, navigation}: {
     Icon: any,
@@ -66,16 +67,20 @@ const CustomDrawerContent = (props: any) => {
 }
 
 const DrawerLayout = () => {
-    return <GestureHandlerRootView style={{flex: 1}}>
-        <Drawer initialRouteName={"Home"} drawerContent={CustomDrawerContent} screenOptions={{
-            drawerType: 'permanent', headerShown: false, drawerStyle: {
-                borderRightColor: colors.latte.colors.surface1.hex,
-                borderRightWidth: 1,
-                backgroundColor: colors.latte.colors.mantle.hex,
-                width: '16%',
-            },
-        }}/>
-    </GestureHandlerRootView>
+    return <SafeAreaContextProvider>
+        <DeviceContextProvider>
+            <GestureHandlerRootView style={{flex: 1}}>
+                <Drawer initialRouteName={"Home"} drawerContent={CustomDrawerContent} screenOptions={{
+                    drawerType: 'permanent', headerShown: false, drawerStyle: {
+                        borderRightColor: colors.latte.colors.surface1.hex,
+                        borderRightWidth: 1,
+                        backgroundColor: colors.latte.colors.mantle.hex,
+                        width: '16%',
+                    },
+                }}/>
+            </GestureHandlerRootView>
+        </DeviceContextProvider>
+    </SafeAreaContextProvider>
 }
 
 export default DrawerLayout;

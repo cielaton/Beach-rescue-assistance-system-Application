@@ -4,12 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="13764756-3e34-46c6-abcd-d77f4754d3a1" name="Changes" comment="[Settings] Optimized the setting option components, added some mockup options and optimized the User Info section">
-      <change afterPath="$PROJECT_DIR$/api/context/Device.context.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/context/SafeArea.context.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="13764756-3e34-46c6-abcd-d77f4754d3a1" name="Changes" comment="[Safe Area] Added the safe area fetch api and corresponding context, along with the device context file">
+      <change afterPath="$PROJECT_DIR$/api/fetch/safe-area.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/context/Device.context.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/api/context/Device.context.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/context/SafeArea.context.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/api/context/SafeArea.context.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/fetch/device.ts" beforeDir="false" afterPath="$PROJECT_DIR$/api/fetch/device.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/(drawer)/_layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(drawer)/_layout.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -117,7 +118,9 @@
       <workItem from="1737169053151" duration="305000" />
       <workItem from="1737202654677" duration="11000" />
       <workItem from="1737253175789" duration="1000" />
-      <workItem from="1737267942295" duration="3354000" />
+      <workItem from="1737267942295" duration="3454000" />
+      <workItem from="1737271409856" duration="314000" />
+      <workItem from="1737356468028" duration="3884000" />
     </task>
     <task id="LOCAL-00001" summary="[Application] Resolving some minor issues on remote EAS build">
       <option name="closed" value="true" />
@@ -423,7 +426,15 @@
       <option name="project" value="LOCAL" />
       <updated>1737099033306</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="[Safe Area] Added the safe area fetch api and corresponding context, along with the device context file">
+      <option name="closed" value="true" />
+      <created>1737271348046</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1737271348046</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -441,7 +452,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="[Home] Configured some Mapbox dependencies" />
     <MESSAGE value="[Home] Added a fully working Mapview in home screen" />
     <MESSAGE value="[Home] Temporarily added a section of Safe area preview, with react-native-picker" />
     <MESSAGE value="[Home] Migrate the safe area section to another file" />
@@ -466,6 +476,7 @@
     <MESSAGE value="[Settings] Optimized the user info section and added the setting option" />
     <MESSAGE value="[Settings] Optimized the setting option components, added some mockup options" />
     <MESSAGE value="[Settings] Optimized the setting option components, added some mockup options and optimized the User Info section" />
-    <option name="LAST_COMMIT_MESSAGE" value="[Settings] Optimized the setting option components, added some mockup options and optimized the User Info section" />
+    <MESSAGE value="[Safe Area] Added the safe area fetch api and corresponding context, along with the device context file" />
+    <option name="LAST_COMMIT_MESSAGE" value="[Safe Area] Added the safe area fetch api and corresponding context, along with the device context file" />
   </component>
 </project>

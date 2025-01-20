@@ -1,5 +1,5 @@
 import {createContext, useEffect, useState} from "react";
-import {safe_area_request} from "@/api/fetch/device";
+import {safe_area_request} from "@/api/fetch/safe-area";
 
 export const SafeAreaContext = createContext({})
 
@@ -13,7 +13,6 @@ export const SafeAreaContextProvider = ({children}: { children: any }) => {
             .then(result => {
                 console.log('[Safe Area] Successfully fetched safe area info');
                 setSafeArea(result);
-                console.log(result)
                 setIsLoadingSafeArea(false);
             }).catch(error => {
             console.log('[Safe Area] Failed to fetch safe area info');
@@ -26,8 +25,8 @@ export const SafeAreaContextProvider = ({children}: { children: any }) => {
     }, [])
 
     return <SafeAreaContext.Provider value={{
-        safeArea: safeArea,
-        isLoadingSafeArea: isLoadingSafeArea,
+        safeArea,
+        isLoadingSafeArea,
     }}>
         {children}
     </SafeAreaContext.Provider>

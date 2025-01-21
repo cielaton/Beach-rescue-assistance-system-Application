@@ -4,13 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="13764756-3e34-46c6-abcd-d77f4754d3a1" name="Changes" comment="[Context] Added the fetch device API along with the corresponding context.&#10;Moved the context wrapper to the actual root component">
-      <change afterPath="$PROJECT_DIR$/api/context/Location.context.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/fetch/location.ts" afterDir="false" />
+    <list default="true" id="13764756-3e34-46c6-abcd-d77f4754d3a1" name="Changes" comment="[Context] Added the location fetch API call and appropriate context, wrapped the provider around the root component.&#10;Updated the Home donut chart to display the correct value">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/context/Device.context.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/api/context/Device.context.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/(drawer)/Home/DonutChart.Home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(drawer)/Home/DonutChart.Home.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/(drawer)/_layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(drawer)/_layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/(drawer)/Status/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(drawer)/Status/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pnpm-lock.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pnpm-lock.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,7 +118,7 @@
       <workItem from="1737267942295" duration="3454000" />
       <workItem from="1737271409856" duration="314000" />
       <workItem from="1737356468028" duration="5235000" />
-      <workItem from="1737434211516" duration="2920000" />
+      <workItem from="1737434211516" duration="4148000" />
     </task>
     <task id="LOCAL-00001" summary="[Application] Resolving some minor issues on remote EAS build">
       <option name="closed" value="true" />
@@ -442,7 +440,15 @@
       <option name="project" value="LOCAL" />
       <updated>1737360459079</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="[Context] Added the location fetch API call and appropriate context, wrapped the provider around the root component.&#10;Updated the Home donut chart to display the correct value">
+      <option name="closed" value="true" />
+      <created>1737437905707</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1737437905707</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -460,7 +466,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="[Home] Temporarily added a section of Safe area preview, with react-native-picker" />
     <MESSAGE value="[Home] Migrate the safe area section to another file" />
     <MESSAGE value="[Home] Added a random beach location for the overview map and minor changes" />
     <MESSAGE value="[Home] Added the Rescue Team section and some minor changes in SafeArea component alignment" />
@@ -485,6 +490,7 @@
     <MESSAGE value="[Settings] Optimized the setting option components, added some mockup options and optimized the User Info section" />
     <MESSAGE value="[Safe Area] Added the safe area fetch api and corresponding context, along with the device context file" />
     <MESSAGE value="[Context] Added the fetch device API along with the corresponding context.&#10;Moved the context wrapper to the actual root component" />
-    <option name="LAST_COMMIT_MESSAGE" value="[Context] Added the fetch device API along with the corresponding context.&#10;Moved the context wrapper to the actual root component" />
+    <MESSAGE value="[Context] Added the location fetch API call and appropriate context, wrapped the provider around the root component.&#10;Updated the Home donut chart to display the correct value" />
+    <option name="LAST_COMMIT_MESSAGE" value="[Context] Added the location fetch API call and appropriate context, wrapped the provider around the root component.&#10;Updated the Home donut chart to display the correct value" />
   </component>
 </project>

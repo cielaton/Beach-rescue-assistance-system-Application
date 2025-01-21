@@ -3,19 +3,16 @@ import Heading from "@/components/Heading";
 import colors from "@/constants/colors.json";
 import TableHeaderStatus from "@/app/(drawer)/Status/TableHeader.Status";
 import TableRowStatus from "@/app/(drawer)/Status/TableRow.Status";
-
-const data = Array.from(Array(25).keys()).map((item) => {
-    return {
-        id: item,
-        longitude: 108.2232,
-        latitude: 16.2232,
-        active: true,
-        uptime: "1 hour 13 minutes",
-        boundary: "inside"
-    }
-})
+import {useContext} from "react";
+import {LocationContext} from "@/api/context/Location.context";
+import {DeviceContext} from "@/api/context/Device.context";
+import moment from "moment";
 
 const DeviceStatusScreen = () => {
+
+    const {locations}: any = useContext(LocationContext)
+    const {totalDevices}: any = useContext(DeviceContext)
+
     return <View style={styles.container}>
         <View style={styles.headingWrapper}>
             <Heading title={"Device Status"}/>
@@ -25,10 +22,11 @@ const DeviceStatusScreen = () => {
         </View>
         <View style={styles.flatListWrapper}>
             <FlatList
-                data={data}
+                data={locations}
                 renderItem={({item}) =>
-                    <TableRowStatus id={item.id} longitude={item.longitude} latitude={item.latitude}
-                                    active={item.active} uptime={item.uptime} boundary={item.boundary}
+                    <TableRowStatus id={locations.indexOf(item)} longitude={item.longitude} latitude={item.latitude}
+                                    active={totalDevices.find((device: any) => device.deviceId === item.deviceId).isEnabled}
+                                    uptime={moment(item.datePublished).fromNow()} boundary={"Inbound"}
                     />
                 }
             />

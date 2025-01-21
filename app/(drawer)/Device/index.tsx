@@ -6,28 +6,35 @@ import VerticalSeparator from "@/components/VerticalSeparator";
 import UserDevice from "@/app/(drawer)/Device/UserDevice/UserDevice.Device";
 import DeviceInfo from "@/app/(drawer)/Device/DeviceInfo.Device";
 import RescueTeamDevice from "@/app/(drawer)/Device/RescueTeam/RescueTeam.Device";
+import {useContext} from "react";
+import {DeviceContext} from "@/api/context/Device.context";
+import {SelectedDeviceContextProvider} from "@/api/context/SelectedDevice.context";
 
 const DeviceManagementScreen = () => {
-    return <View style={styles.container}>
-        <View style={styles.headingWrapper}>
-            <Heading title={"Device Management"}/>
-        </View>
-        <View style={styles.deviceInfoContainer}>
-            <View style={styles.userDeviceWrapper}>
-                <UserDevice/>
+    const {totalDevices}: any = useContext(DeviceContext)
+
+    return <SelectedDeviceContextProvider>
+        <View style={styles.container}>
+            <View style={styles.headingWrapper}>
+                <Heading title={"Device Management"}/>
             </View>
-            <HorizontalSeparator width={20}/>
-            <View style={styles.deviceInfoAndRescueTeamDeviceWrapper}>
-                <View style={styles.deviceInfoWrapper}>
-                    <DeviceInfo/>
+            <View style={styles.deviceInfoContainer}>
+                <View style={styles.userDeviceWrapper}>
+                    <UserDevice/>
                 </View>
-                <VerticalSeparator height={20}/>
-                <View style={styles.rescueTeamDeviceWrapper}>
-                    <RescueTeamDevice/>
+                <HorizontalSeparator width={20}/>
+                <View style={styles.deviceInfoAndRescueTeamDeviceWrapper}>
+                    <View style={styles.deviceInfoWrapper}>
+                        <DeviceInfo/>
+                    </View>
+                    <VerticalSeparator height={20}/>
+                    <View style={styles.rescueTeamDeviceWrapper}>
+                        <RescueTeamDevice/>
+                    </View>
                 </View>
             </View>
         </View>
-    </View>
+    </SelectedDeviceContextProvider>
 }
 
 export default DeviceManagementScreen;

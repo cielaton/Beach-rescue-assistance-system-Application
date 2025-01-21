@@ -1,20 +1,23 @@
-import {useState} from "react";
+import {useContext, useState} from "react";
 import {StyleSheet, Switch, Text, TouchableOpacity, View} from "react-native";
 import colors from "@/constants/colors.json";
 import {Trash} from "lucide-react-native";
+import {SelectedDeviceContext} from "@/api/context/SelectedDevice.context";
 
-const TableRowUserDevice = ({id, uptime, active, pressedDeviceIndex, setPressedDeviceIndex}: {
+const TableRowUserDevice = ({id, uptime, active}: {
     id: number,
     uptime: string,
     active: boolean,
-    pressedDeviceIndex: number,
-    setPressedDeviceIndex: any
 }) => {
+    const {selectedDevice, setSelectedDevice}: any = useContext(SelectedDeviceContext)
     const [enabled, setEnabled] = useState(true);
 
     return <TouchableOpacity onPress={() => {
-        setPressedDeviceIndex(id)
-    }} style={pressedDeviceIndex === id ? {
+        setSelectedDevice({
+            deviceType: "User",
+            deviceIndex: id
+        })
+    }} style={selectedDevice.deviceIndex === id ? {
         ...styles.container,
         backgroundColor: colors.mocha.colors.mauve.hex
     } : styles.container}>

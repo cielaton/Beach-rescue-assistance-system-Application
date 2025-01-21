@@ -18,7 +18,7 @@ const RescueTeamDevice = () => {
     return <View style={styles.container}>
         <Text style={styles.heading}>Rescue Team</Text>
         <TableHeaderRescueTeam/>
-        <FlatList data={data} renderItem={({item}) => {
+        <FlatList showsVerticalScrollIndicator={false} data={data} renderItem={({item}) => {
             return <View>
                 <TableRowRescueTeam id={item.id} name={item.name} role={item.role} active={item.active}/>
                 <VerticalSeparator height={5}/>

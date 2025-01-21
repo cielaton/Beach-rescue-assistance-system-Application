@@ -22,6 +22,7 @@ const DeviceStatusScreen = () => {
         </View>
         <View style={styles.flatListWrapper}>
             <FlatList
+                showsVerticalScrollIndicator={false}
                 data={locations}
                 renderItem={({item}) =>
                     <TableRowStatus id={locations.indexOf(item)} longitude={item.longitude} latitude={item.latitude}

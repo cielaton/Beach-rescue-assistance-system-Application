@@ -4,10 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="13764756-3e34-46c6-abcd-d77f4754d3a1" name="Changes" comment="[Status] Updated the screen to utilize the data fetched from the server">
+    <list default="true" id="13764756-3e34-46c6-abcd-d77f4754d3a1" name="Changes" comment="[Status] Added the disabled device status icon and added the sorting inactive device function in the context.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/context/Device.context.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/api/context/Device.context.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/(drawer)/Device/RescueTeam/RescueTeam.Device.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(drawer)/Device/RescueTeam/RescueTeam.Device.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/(drawer)/Device/UserDevice/TableRow.UserDevice.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(drawer)/Device/UserDevice/TableRow.UserDevice.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/(drawer)/Device/UserDevice/UserDevice.Device.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(drawer)/Device/UserDevice/UserDevice.Device.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/(drawer)/Status/TableRow.Status.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(drawer)/Status/TableRow.Status.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/(drawer)/Status/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(drawer)/Status/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,7 +120,7 @@
       <workItem from="1737267942295" duration="3454000" />
       <workItem from="1737271409856" duration="314000" />
       <workItem from="1737356468028" duration="5235000" />
-      <workItem from="1737434211516" duration="6239000" />
+      <workItem from="1737434211516" duration="8949000" />
     </task>
     <task id="LOCAL-00001" summary="[Application] Resolving some minor issues on remote EAS build">
       <option name="closed" value="true" />
@@ -455,7 +458,15 @@
       <option name="project" value="LOCAL" />
       <updated>1737439131405</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="[Status] Added the disabled device status icon and added the sorting inactive device function in the context.">
+      <option name="closed" value="true" />
+      <created>1737442106151</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1737442106151</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -473,7 +484,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="[Home] Added a random beach location for the overview map and minor changes" />
     <MESSAGE value="[Home] Added the Rescue Team section and some minor changes in SafeArea component alignment" />
     <MESSAGE value="[Location] Added a map to the Location screen and some minor change" />
     <MESSAGE value="[Status] Added the heading and table header for the Status screen" />
@@ -498,6 +508,7 @@
     <MESSAGE value="[Context] Added the fetch device API along with the corresponding context.&#10;Moved the context wrapper to the actual root component" />
     <MESSAGE value="[Context] Added the location fetch API call and appropriate context, wrapped the provider around the root component.&#10;Updated the Home donut chart to display the correct value" />
     <MESSAGE value="[Status] Updated the screen to utilize the data fetched from the server" />
-    <option name="LAST_COMMIT_MESSAGE" value="[Status] Updated the screen to utilize the data fetched from the server" />
+    <MESSAGE value="[Status] Added the disabled device status icon and added the sorting inactive device function in the context." />
+    <option name="LAST_COMMIT_MESSAGE" value="[Status] Added the disabled device status icon and added the sorting inactive device function in the context." />
   </component>
 </project>

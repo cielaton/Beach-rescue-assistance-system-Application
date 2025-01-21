@@ -6,7 +6,8 @@ import {Trash} from "lucide-react-native";
 const TableRowUserDevice = ({id, uptime, active}: { id: number, uptime: string, active: boolean }) => {
     const [enabled, setEnabled] = useState(true);
 
-    return <View style={styles.container}>
+    return <TouchableOpacity onPress={() => {
+    }} style={styles.container}>
         <View style={styles.device}>
             <View style={styles.deviceCircle}>
                 <Text style={styles.deviceNumber}>{id}</Text>
@@ -35,7 +36,7 @@ const TableRowUserDevice = ({id, uptime, active}: { id: number, uptime: string, 
                 </View>
             </TouchableOpacity>
         </View>
-    </View>
+    </TouchableOpacity>
 }
 
 export default TableRowUserDevice;

@@ -2,22 +2,20 @@ import {FlatList, StyleSheet, Text, View} from "react-native";
 import colors from "@/constants/colors.json";
 import TableHeaderUserDevice from "@/app/(drawer)/Device/UserDevice/TableHeader.UserDevice";
 import TableRowUserDevice from "@/app/(drawer)/Device/UserDevice/TableRow.UserDevice";
-
-const data = Array.from(Array(25).keys()).map((item) => {
-    return {
-        id: item,
-        uptime: "1 hour 13 minutes",
-        active: true,
-    }
-})
+import {useContext} from "react";
+import {DeviceContext} from "@/api/context/Device.context";
+import moment from "moment";
 
 const UserDevice = () => {
+    const {totalDevices}: any = useContext(DeviceContext);
+
     return <View style={styles.container}>
         <Text style={styles.heading}>User's Device</Text>
         <TableHeaderUserDevice/>
-        <FlatList data={data} renderItem={
+        <FlatList showsVerticalScrollIndicator={false} data={totalDevices} renderItem={
             ({item}) => {
-                return <TableRowUserDevice id={item.id} uptime={item.uptime} active={item.active}/>
+                return <TableRowUserDevice id={totalDevices.indexOf(item)} uptime={moment(item.dateAdded).fromNow()}
+                                           active={item.isEnabled}/>
             }
         }/>
     </View>

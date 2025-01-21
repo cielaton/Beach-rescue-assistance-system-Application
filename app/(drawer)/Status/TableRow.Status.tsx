@@ -1,4 +1,4 @@
-import {StyleSheet, Text, View} from "react-native";
+import {StyleSheet, Text, TouchableOpacity, View} from "react-native";
 import colors from "@/constants/colors.json";
 import {Check, X} from "lucide-react-native";
 
@@ -11,7 +11,7 @@ const TableRowStatus = ({id, longitude, latitude, active, uptime, boundary}: {
     boundary: string
 }) => {
     // temporary object to hold the table row value
-    return <View style={styles.container}>
+    return <TouchableOpacity style={styles.container}>
         <View style={styles.device}>
             <View style={styles.deviceCircle}>
                 <Text style={styles.deviceNumber}>{id}</Text>
@@ -41,7 +41,7 @@ const TableRowStatus = ({id, longitude, latitude, active, uptime, boundary}: {
                 color: colors.latte.colors.green.hex
             }}>{boundary}</Text>
         </View>
-    </View>
+    </TouchableOpacity>
 }
 
 export default TableRowStatus;

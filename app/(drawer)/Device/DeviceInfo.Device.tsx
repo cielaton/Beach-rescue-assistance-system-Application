@@ -1,6 +1,11 @@
+import {useContext} from "react";
 import {StyleSheet, Text, View} from "react-native";
 import colors from "@/constants/colors.json";
 import {BatteryFull} from "lucide-react-native";
+import {SelectedDeviceContext} from "@/api/context/SelectedDevice.context";
+import {DeviceContext} from "@/api/context/Device.context";
+import {LocationContext} from "@/api/context/Location.context";
+import moment from "moment";
 
 const DeviceInfoSection = ({info, value}: { info: string, value: string }) => {
     return <View>
@@ -10,9 +15,14 @@ const DeviceInfoSection = ({info, value}: { info: string, value: string }) => {
 }
 
 const DeviceInfo = () => {
+
+    const {selectedDevice, setSelectedDevice}: any = useContext(SelectedDeviceContext)
+    const {totalDevices}: any = useContext(DeviceContext)
+    const {locations}: any = useContext(LocationContext)
+
     return <View style={styles.container}>
         <View style={styles.firstColumn}>
-            <Text style={styles.heading}>Device info</Text>
+            <Text style={styles.heading}>{"Device info - " + selectedDevice.deviceIndex}</Text>
             <View style={styles.batteryContainer}>
                 <BatteryFull size={30} color={colors.mocha.colors.green.hex}/>
                 <View style={styles.batteryPercentageContainer}>
@@ -27,9 +37,12 @@ const DeviceInfo = () => {
             </View>
         </View>
         <View style={styles.secondColumn}>
-            <DeviceInfoSection info={"Last update"} value={"5 minutes ago"}/>
-            <DeviceInfoSection info={"Added"} value={"2 months ago"}/>
-            <DeviceInfoSection info={"Active"} value={"true"}/>
+            <DeviceInfoSection info={"Last update"}
+                               value={moment(locations[selectedDevice.deviceIndex].datePublished).fromNow()}/>
+            <DeviceInfoSection info={"Added"} value={
+                moment(totalDevices[selectedDevice.deviceIndex].dateAdded).fromNow()
+            }/>
+            <DeviceInfoSection info={"Active"} value={totalDevices[selectedDevice.deviceIndex].isEnabled.toString()}/>
         </View>
     </View>
 }

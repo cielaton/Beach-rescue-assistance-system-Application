@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="13764756-3e34-46c6-abcd-d77f4754d3a1" name="Changes" comment="[Device Management] Added the ability to choose which device to show the detail information">
-      <change afterPath="$PROJECT_DIR$/api/context/SelectedDevice.context.tsx" afterDir="false" />
+    <list default="true" id="13764756-3e34-46c6-abcd-d77f4754d3a1" name="Changes" comment="[Device Management] Migrate the device selection handle to using context API">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/(drawer)/Device/UserDevice/TableRow.UserDevice.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(drawer)/Device/UserDevice/TableRow.UserDevice.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/(drawer)/Device/UserDevice/UserDevice.Device.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(drawer)/Device/UserDevice/UserDevice.Device.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/(drawer)/Device/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(drawer)/Device/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/(drawer)/Device/DeviceInfo.Device.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(drawer)/Device/DeviceInfo.Device.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,7 +116,7 @@
       <workItem from="1737267942295" duration="3454000" />
       <workItem from="1737271409856" duration="314000" />
       <workItem from="1737356468028" duration="5235000" />
-      <workItem from="1737434211516" duration="11680000" />
+      <workItem from="1737434211516" duration="12256000" />
     </task>
     <task id="LOCAL-00001" summary="[Application] Resolving some minor issues on remote EAS build">
       <option name="closed" value="true" />
@@ -481,7 +478,15 @@
       <option name="project" value="LOCAL" />
       <updated>1737445877047</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="[Device Management] Migrate the device selection handle to using context API">
+      <option name="closed" value="true" />
+      <created>1737447413693</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1737447413693</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -499,7 +504,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="[Status] Added the heading and table header for the Status screen" />
     <MESSAGE value="[Status] Temporarily complete the table contents of the device status screen" />
     <MESSAGE value="[Status] Migrate the row item into another file and optimized it" />
     <MESSAGE value="[Status] Migrate the row item into another file and clean it up" />
@@ -524,6 +528,7 @@
     <MESSAGE value="[Status] Added the disabled device status icon and added the sorting inactive device function in the context." />
     <MESSAGE value="[Device Management] Updated the table row to utilize the device context data.&#10;Disabled the vertical scroll indicator for all FatList components.&#10;Make the FlatList item touchable" />
     <MESSAGE value="[Device Management] Added the ability to choose which device to show the detail information" />
-    <option name="LAST_COMMIT_MESSAGE" value="[Device Management] Added the ability to choose which device to show the detail information" />
+    <MESSAGE value="[Device Management] Migrate the device selection handle to using context API" />
+    <option name="LAST_COMMIT_MESSAGE" value="[Device Management] Migrate the device selection handle to using context API" />
   </component>
 </project>

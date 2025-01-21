@@ -1,12 +1,9 @@
 import {StyleSheet, Text, View} from "react-native";
 import {PieChart} from "react-native-gifted-charts";
 import colors from "@/constants/colors.json";
+import {useContext} from "react";
+import {DeviceContext} from "@/api/context/Device.context";
 
-const pieChartData = [
-    {value: 25, color: colors.mocha.colors.green.hex},
-    {value: 0, color: colors.mocha.colors.yellow.hex},
-    {value: 0, color: colors.mocha.colors.red.hex},
-]
 
 const LegendItem = ({color, description}: { color: string, description: string }) => {
     return <View style={styles.legendItemContainer}>
@@ -16,6 +13,13 @@ const LegendItem = ({color, description}: { color: string, description: string }
 }
 
 const DonutChartHome = () => {
+    const {totalDevices}: any = useContext(DeviceContext)
+
+    const pieChartData = [
+        {value: totalDevices.length, color: colors.mocha.colors.green.hex},
+        {value: 0, color: colors.mocha.colors.yellow.hex},
+        {value: 0, color: colors.mocha.colors.red.hex},
+    ]
     return <View style={styles.container}>
         <View style={styles.chartContainer}>
             <PieChart
@@ -23,7 +27,7 @@ const DonutChartHome = () => {
                 radius={50} innerRadius={30} data={pieChartData}
                 centerLabelComponent={() => {
                     return <View style={styles.centerLabelContainer}>
-                        <Text style={styles.valueText}>25</Text>
+                        <Text style={styles.valueText}>{totalDevices.length}</Text>
                         <Text style={styles.totalText}>Total</Text>
                     </View>
                 }}/>

@@ -25,13 +25,12 @@ export const DeviceContextProvider = ({children}: { children: any }) => {
     };
 
     useEffect(() => {
-        console.log(isLoadingSafeArea)
         if (!isLoadingSafeArea) {
             send_device_request_by_safe_area()
         }
     }, [isLoadingSafeArea])
 
-    return <DeviceContext.Provider value={{}}>
+    return <DeviceContext.Provider value={{totalDevices, isLoadingDevice}}>
         {children}
     </DeviceContext.Provider>
 }

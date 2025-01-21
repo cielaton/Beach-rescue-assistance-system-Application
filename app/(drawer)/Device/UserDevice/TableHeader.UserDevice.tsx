@@ -27,7 +27,7 @@ const styles = StyleSheet.create({
         justifyContent: 'space-between'
     },
     deviceWrapper: {
-        width: '15%',
+        width: '20%',
     },
     uptimeWrapper: {
         width: '40%',

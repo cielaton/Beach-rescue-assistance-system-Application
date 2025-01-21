@@ -3,11 +3,21 @@ import {StyleSheet, Switch, Text, TouchableOpacity, View} from "react-native";
 import colors from "@/constants/colors.json";
 import {Trash} from "lucide-react-native";
 
-const TableRowUserDevice = ({id, uptime, active}: { id: number, uptime: string, active: boolean }) => {
+const TableRowUserDevice = ({id, uptime, active, pressedDeviceIndex, setPressedDeviceIndex}: {
+    id: number,
+    uptime: string,
+    active: boolean,
+    pressedDeviceIndex: number,
+    setPressedDeviceIndex: any
+}) => {
     const [enabled, setEnabled] = useState(true);
 
     return <TouchableOpacity onPress={() => {
-    }} style={styles.container}>
+        setPressedDeviceIndex(id)
+    }} style={pressedDeviceIndex === id ? {
+        ...styles.container,
+        backgroundColor: colors.mocha.colors.mauve.hex
+    } : styles.container}>
         <View style={styles.device}>
             <View style={styles.deviceCircle}>
                 <Text style={styles.deviceNumber}>{id}</Text>
@@ -44,12 +54,14 @@ export default TableRowUserDevice;
 const styles = StyleSheet.create({
     container: {
         height: 45,
+        borderRadius: 10,
         flexDirection: 'row',
         justifyContent: 'space-between',
-        alignItems: 'center'
+        alignItems: 'center',
     },
     device: {
-        width: '15%',
+        width: '20%',
+        paddingLeft: 10,
     },
     deviceCircle: {
         height: '70%',

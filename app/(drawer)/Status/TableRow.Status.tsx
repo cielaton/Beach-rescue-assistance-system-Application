@@ -1,6 +1,6 @@
 import {StyleSheet, Text, View} from "react-native";
 import colors from "@/constants/colors.json";
-import {Check} from "lucide-react-native";
+import {Check, X} from "lucide-react-native";
 
 const TableRowStatus = ({id, longitude, latitude, active, uptime, boundary}: {
     id: number,
@@ -24,9 +24,14 @@ const TableRowStatus = ({id, longitude, latitude, active, uptime, boundary}: {
             <Text>{latitude}</Text>
         </View>
         <View style={styles.active}>
-            <View style={styles.activeCircle}>
-                <Check size={15} color={colors.latte.colors.base.hex}/>
-            </View>
+            {active ?
+                <View style={styles.activeCircle}>
+                    <Check size={15} color={colors.latte.colors.base.hex}/>
+                </View> :
+                <View style={styles.inactiveCircle}>
+                    <X size={15} color={colors.latte.colors.base.hex}/>
+                </View>
+            }
         </View>
         <View style={styles.uptime}>
             <Text>{uptime}</Text>
@@ -78,6 +83,14 @@ const styles = StyleSheet.create({
         aspectRatio: 1,
         borderRadius: '100%',
         backgroundColor: colors.latte.colors.green.hex,
+        justifyContent: 'center',
+        alignItems: 'center'
+    },
+    inactiveCircle: {
+        height: '50%',
+        aspectRatio: 1,
+        borderRadius: '100%',
+        backgroundColor: colors.latte.colors.red.hex,
         justifyContent: 'center',
         alignItems: 'center'
     },

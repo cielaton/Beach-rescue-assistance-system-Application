@@ -9,9 +9,13 @@ import DonutChartHome from "@/app/(drawer)/Home/DonutChart.Home";
 import MapHome from "@/app/(drawer)/Home/Map.Home";
 import SafeAreaHome from "@/app/(drawer)/Home/SafeArea.Home";
 import RescueTeamHome from "@/app/(drawer)/Home/RescueTeam.Home";
+import {useContext} from "react";
+import {RescuerContext} from "@/api/context/Rescuer.context";
 
 
 const HomeScreen = () => {
+    const {totalRescuers}: any = useContext(RescuerContext)
+    console.log(totalRescuers)
     return (
         <View style={styles.container}>
             <View style={styles.headingWrapper}>

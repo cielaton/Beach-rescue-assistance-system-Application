@@ -8,14 +8,12 @@ import {LocationContext} from "@/api/context/Location.context";
 const LocationScreen = () => {
     // Create a list of point annotation components
     const {locations}: any = useContext(LocationContext)
-    const pointAnnotationComponents = locations.slice(1, 2).map((location: any, index: number) => {
-        return <PointAnnotation key={index.toString()} id={index.toString()}
+    const pointAnnotationComponents = locations.map((location: any, index: number) => {
+        return <PointAnnotation key={location.deviceId} id={index.toString()}
                                 coordinate={[location.longitude, location.latitude]}>
             <Text style={styles.deviceNumber}>{index}</Text>
         </PointAnnotation>
     })
-
-    console.log(pointAnnotationComponents)
 
     return <View style={styles.container}>
         <Mapbox.MapView
@@ -44,7 +42,7 @@ const LocationScreen = () => {
                         fillOutlineColor: 'red',
                     }}
                 /></ShapeSource>
-            <Camera animationMode={"none"} centerCoordinate={[108.249169, 16.062597]} zoomLevel={14}/>
+            <Camera animationMode={"none"} centerCoordinate={[108.249172, 16.062595]} zoomLevel={16.5}/>
         </Mapbox.MapView>
     </View>
 }
@@ -60,9 +58,15 @@ const styles = StyleSheet.create({
         overflow: 'hidden'
     },
     deviceNumber: {
+        borderWidth: 2,
+        borderColor: colors.latte.colors.green.hex,
+        borderRadius: 1000,
+        height: 30,
+        aspectRatio: 1,
+        backgroundColor: 'rgba(166, 227, 161, 0.5)',
         textAlign: 'center',
         textAlignVertical: 'center',
-        fontSize: 20,
+        fontSize: 15,
         fontWeight: 'bold',
         color: colors.latte.colors.green.hex
     },

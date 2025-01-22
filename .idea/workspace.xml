@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="13764756-3e34-46c6-abcd-d77f4754d3a1" name="Changes" comment="[Device Management] Migrate the device selection handle to using context API">
+    <list default="true" id="13764756-3e34-46c6-abcd-d77f4754d3a1" name="Changes" comment="[Device Management] Updated the Device Info section to display the selected device info.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/(drawer)/Device/DeviceInfo.Device.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(drawer)/Device/DeviceInfo.Device.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/(drawer)/Device/UserDevice/TableRow.UserDevice.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(drawer)/Device/UserDevice/TableRow.UserDevice.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/(drawer)/Location/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(drawer)/Location/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pnpm-lock.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pnpm-lock.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,7 +119,9 @@
       <workItem from="1737267942295" duration="3454000" />
       <workItem from="1737271409856" duration="314000" />
       <workItem from="1737356468028" duration="5235000" />
-      <workItem from="1737434211516" duration="12256000" />
+      <workItem from="1737434211516" duration="12475000" />
+      <workItem from="1737466615583" duration="3990000" />
+      <workItem from="1737519623438" duration="7123000" />
     </task>
     <task id="LOCAL-00001" summary="[Application] Resolving some minor issues on remote EAS build">
       <option name="closed" value="true" />
@@ -486,7 +491,15 @@
       <option name="project" value="LOCAL" />
       <updated>1737447413693</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="[Device Management] Updated the Device Info section to display the selected device info.">
+      <option name="closed" value="true" />
+      <created>1737448034197</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1737448034197</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -504,7 +517,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="[Status] Temporarily complete the table contents of the device status screen" />
     <MESSAGE value="[Status] Migrate the row item into another file and optimized it" />
     <MESSAGE value="[Status] Migrate the row item into another file and clean it up" />
     <MESSAGE value="[Application] Dynamically generate the mockup device status and disable map zoom animation" />
@@ -529,6 +541,7 @@
     <MESSAGE value="[Device Management] Updated the table row to utilize the device context data.&#10;Disabled the vertical scroll indicator for all FatList components.&#10;Make the FlatList item touchable" />
     <MESSAGE value="[Device Management] Added the ability to choose which device to show the detail information" />
     <MESSAGE value="[Device Management] Migrate the device selection handle to using context API" />
-    <option name="LAST_COMMIT_MESSAGE" value="[Device Management] Migrate the device selection handle to using context API" />
+    <MESSAGE value="[Device Management] Updated the Device Info section to display the selected device info." />
+    <option name="LAST_COMMIT_MESSAGE" value="[Device Management] Updated the Device Info section to display the selected device info." />
   </component>
 </project>

@@ -19,7 +19,7 @@ const TableRowUserDevice = ({id, uptime, active}: {
         })
     }} style={selectedDevice.deviceIndex === id ? {
         ...styles.container,
-        backgroundColor: colors.mocha.colors.mauve.hex
+        backgroundColor: 'rgba(203, 166, 247, 0.5)'
     } : styles.container}>
         <View style={styles.device}>
             <View style={styles.deviceCircle}>

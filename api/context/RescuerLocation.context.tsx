@@ -4,8 +4,17 @@ import {get_rescuer_locations} from "@/api/fetch/rescuer-location";
 
 export const RescuerLocationContext = createContext({})
 
+const filter_inactive_rescuer = (rescuers: any) => {
+    return rescuers.filter((item: any) => {
+            return item.isEnabled === true
+        }
+    )
+}
+
 export const RescuerLocationContextProvider = ({children}: { children: any }) => {
-    const {totalRescuers, isLoadingRescuer}: any = useContext(RescuerContext);
+    let {totalRescuers, isLoadingRescuer}: any = useContext(RescuerContext);
+    // Filter out the inactive rescuer
+    totalRescuers = filter_inactive_rescuer(totalRescuers)
 
     const [rescuerLocations, setRescuerLocations] = useState([])
     const [isLoadingRescuerLocations, setIsLoadingRescuerLocations] = useState(true);

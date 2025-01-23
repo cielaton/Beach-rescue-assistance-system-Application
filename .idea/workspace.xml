@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="13764756-3e34-46c6-abcd-d77f4754d3a1" name="Changes" comment="[Rescuer Location] Added the rescuer location context and wrap it outside the root component">
+    <list default="true" id="13764756-3e34-46c6-abcd-d77f4754d3a1" name="Changes" comment="[Home] Added the rescuer locations on the Home map">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/(drawer)/Home/Map.Home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(drawer)/Home/Map.Home.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/context/Rescuer.context.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/api/context/Rescuer.context.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/context/RescuerLocation.context.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/api/context/RescuerLocation.context.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,15 +121,7 @@
       <workItem from="1737466615583" duration="3990000" />
       <workItem from="1737519623438" duration="10359000" />
       <workItem from="1737532879923" duration="831000" />
-      <workItem from="1737599221965" duration="5858000" />
-    </task>
-    <task id="LOCAL-00003" summary="[Application] Messing around with basic navigation provided by Expo">
-      <option name="closed" value="true" />
-      <created>1736605692075</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1736605692075</updated>
+      <workItem from="1737599221965" duration="6773000" />
     </task>
     <task id="LOCAL-00004" summary="[Navigation] Successfully implemented tab navigation">
       <option name="closed" value="true" />
@@ -514,7 +507,15 @@
       <option name="project" value="LOCAL" />
       <updated>1737602093797</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="[Home] Added the rescuer locations on the Home map">
+      <option name="closed" value="true" />
+      <created>1737605244998</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1737605244998</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -532,7 +533,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="[Device] Added a basic component structure for the device screen" />
     <MESSAGE value="[Device] Just added a basic header for the user device table and re-organize the file structure" />
     <MESSAGE value="[Device] Added a table row component for the user device along with mockup device data and minor optimization for table heading" />
     <MESSAGE value="[Device] Start to work on the Device info section, added the heading and some information components" />
@@ -557,6 +557,7 @@
     <MESSAGE value="[Location] Successfully display all the device locations on the map" />
     <MESSAGE value="[Home] Added the ability to fetch and render the rescue team from the server.&#10;Added the inactive status icon" />
     <MESSAGE value="[Rescuer Location] Added the rescuer location context and wrap it outside the root component" />
-    <option name="LAST_COMMIT_MESSAGE" value="[Rescuer Location] Added the rescuer location context and wrap it outside the root component" />
+    <MESSAGE value="[Home] Added the rescuer locations on the Home map" />
+    <option name="LAST_COMMIT_MESSAGE" value="[Home] Added the rescuer locations on the Home map" />
   </component>
 </project>

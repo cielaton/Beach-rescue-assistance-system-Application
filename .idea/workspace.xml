@@ -5,13 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="13764756-3e34-46c6-abcd-d77f4754d3a1" name="Changes" comment="[Location] Successfully display all the device locations on the map">
-      <change afterPath="$PROJECT_DIR$/api/context/Rescuer.context.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/context/RescuerLocation.context.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/fetch/rescuer-location.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/fetch/rescuer.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/(drawer)/Home/RescueTeam.Home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(drawer)/Home/RescueTeam.Home.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/(drawer)/Home/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(drawer)/Home/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/(drawer)/_layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(drawer)/_layout.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -125,6 +121,7 @@
       <workItem from="1737466615583" duration="3990000" />
       <workItem from="1737519623438" duration="10359000" />
       <workItem from="1737532879923" duration="831000" />
+      <workItem from="1737599221965" duration="1772000" />
     </task>
     <task id="LOCAL-00001" summary="[Application] Resolving some minor issues on remote EAS build">
       <option name="closed" value="true" />

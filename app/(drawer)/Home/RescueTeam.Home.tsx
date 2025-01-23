@@ -1,37 +1,46 @@
-import {StyleSheet, Text, View} from "react-native";
+import {FlatList, StyleSheet, Text, View} from "react-native";
 import colors from "@/constants/colors.json";
-import {Check, ShieldPlus} from "lucide-react-native";
+import {Check, ShieldPlus, X} from "lucide-react-native";
 import VerticalSeparator from "@/components/VerticalSeparator";
+import {useContext} from "react";
+import {RescuerContext} from "@/api/context/Rescuer.context";
 
-const Rescuer = () => {
+const Rescuer = ({name, role, active}: { name: string, role: string, active: boolean }) => {
     return <View style={styles.rescuerContainer}>
         <View style={styles.rescuerIconAndNameWrapper}>
             <View style={styles.rescuerIconContainer}>
                 <ShieldPlus size={20} color={colors.latte.colors.red.hex}/>
             </View>
             <View style={styles.rescuerNameContainer}>
-                <Text style={styles.rescuerName}>Nguyen Van A</Text>
-                <Text style={styles.rescuerRole}>Rescuer</Text>
+                <Text style={styles.rescuerName}>{name}</Text>
+                <Text style={styles.rescuerRole}>{role}</Text>
             </View>
         </View>
-        <View style={styles.rescuerStatus}>
-            <Check size={15} color={colors.latte.colors.base.hex}/>
-        </View>
+        {active ?
+            <View style={styles.rescuerActive}>
+                <Check size={15} color={colors.latte.colors.base.hex}/>
+            </View> :
+            <View style={styles.rescuerInactive}>
+                <X size={15} color={colors.latte.colors.base.hex}/>
+            </View>
+        }
     </View>
 }
 const RescueTeamHome = () => {
+    const {totalRescuers}: any = useContext(RescuerContext)
+
     return <View style={styles.container}>
         <Text style={styles.heading}>Rescue Team</Text>
         <VerticalSeparator height={10}/>
-        <Rescuer />
-        <VerticalSeparator height={15}/>
-        <Rescuer />
-        <VerticalSeparator height={15}/>
-        <Rescuer />
-        <VerticalSeparator height={15}/>
-        <Rescuer />
-        <VerticalSeparator height={15}/>
-        <Rescuer />
+        <FlatList showsVerticalScrollIndicator={false} data={totalRescuers} renderItem={({item}) => {
+            return <View>
+                <Rescuer name={item.name} role={item.role} active={item.isEnabled}/>
+                <VerticalSeparator height={15}/>
+            </View>
+        }} style={{
+            flex: 1
+        }}>
+        </FlatList>
     </View>
 }
 
@@ -82,11 +91,19 @@ const styles = StyleSheet.create({
         lineHeight: 17,
         color: colors.mocha.colors.base.hex
     },
-    rescuerStatus: {
+    rescuerActive: {
         height: '60%',
         aspectRatio: 1,
         borderRadius: '100%',
         backgroundColor: colors.latte.colors.green.hex,
+        justifyContent: 'center',
+        alignItems: 'center'
+    },
+    rescuerInactive: {
+        height: '60%',
+        aspectRatio: 1,
+        borderRadius: '100%',
+        backgroundColor: colors.latte.colors.red.hex,
         justifyContent: 'center',
         alignItems: 'center'
     }

@@ -4,10 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="13764756-3e34-46c6-abcd-d77f4754d3a1" name="Changes" comment="[Location] Successfully display all the device locations on the map">
+    <list default="true" id="13764756-3e34-46c6-abcd-d77f4754d3a1" name="Changes" comment="[Home] Added the ability to fetch and render the rescue team from the server.&#10;Added the inactive status icon">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/(drawer)/Home/RescueTeam.Home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(drawer)/Home/RescueTeam.Home.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/(drawer)/Home/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(drawer)/Home/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/context/Location.context.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/api/context/Location.context.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/context/Rescuer.context.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/api/context/Rescuer.context.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/context/RescuerLocation.context.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/api/context/RescuerLocation.context.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/fetch/rescuer-location.ts" beforeDir="false" afterPath="$PROJECT_DIR$/api/fetch/rescuer-location.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/(drawer)/_layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(drawer)/_layout.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,15 +124,7 @@
       <workItem from="1737466615583" duration="3990000" />
       <workItem from="1737519623438" duration="10359000" />
       <workItem from="1737532879923" duration="831000" />
-      <workItem from="1737599221965" duration="1772000" />
-    </task>
-    <task id="LOCAL-00001" summary="[Application] Resolving some minor issues on remote EAS build">
-      <option name="closed" value="true" />
-      <created>1736591084666</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1736591084666</updated>
+      <workItem from="1737599221965" duration="2737000" />
     </task>
     <task id="LOCAL-00002" summary="[Application] Cleaned the project structure and some minor fix to make the application run smoothly">
       <option name="closed" value="true" />
@@ -515,7 +510,15 @@
       <option name="project" value="LOCAL" />
       <updated>1737529884747</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="[Home] Added the ability to fetch and render the rescue team from the server.&#10;Added the inactive status icon">
+      <option name="closed" value="true" />
+      <created>1737601164838</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1737601164838</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -533,7 +536,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="[Application] Dynamically generate the mockup device status and disable map zoom animation" />
     <MESSAGE value="[Device] Added the heading and improve the Status table element height" />
     <MESSAGE value="[Device] Added a basic component structure for the device screen" />
     <MESSAGE value="[Device] Just added a basic header for the user device table and re-organize the file structure" />
@@ -558,6 +560,7 @@
     <MESSAGE value="[Device Management] Updated the Device Info section to display the selected device info." />
     <MESSAGE value="[Location] Rendered the safe area, trying to render all of the device location at once" />
     <MESSAGE value="[Location] Successfully display all the device locations on the map" />
-    <option name="LAST_COMMIT_MESSAGE" value="[Location] Successfully display all the device locations on the map" />
+    <MESSAGE value="[Home] Added the ability to fetch and render the rescue team from the server.&#10;Added the inactive status icon" />
+    <option name="LAST_COMMIT_MESSAGE" value="[Home] Added the ability to fetch and render the rescue team from the server.&#10;Added the inactive status icon" />
   </component>
 </project>

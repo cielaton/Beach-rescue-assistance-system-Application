@@ -29,7 +29,7 @@ export const RescuerContextProvider = ({children}: { children: any }) => {
         }
     }, [isLoadingSafeArea])
 
-    return <RescuerContext.Provider value={{totalRescuers}}>
+    return <RescuerContext.Provider value={{totalRescuers, isLoadingRescuer}}>
         {children}
     </RescuerContext.Provider>;
 }

@@ -17,7 +17,6 @@ export const LocationContextProvider = ({children}: { children: any }) => {
             .then(result => {
                 console.log('[Location] Successfully fetched device locations');
                 setLocations(result);
-                console.log(result.length)
                 setIsLoadingLocations(false);
             }).catch(error => {
             console.log('[Location] Failed to fetch device locations');

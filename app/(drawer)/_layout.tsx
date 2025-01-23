@@ -9,6 +9,7 @@ import {DeviceContextProvider} from "@/api/context/Device.context";
 import {SafeAreaContextProvider} from "@/api/context/SafeArea.context";
 import {LocationContextProvider} from "@/api/context/Location.context";
 import {RescuerContextProvider} from "@/api/context/Rescuer.context";
+import {RescuerLocationContextProvider} from "@/api/context/RescuerLocation.context";
 
 const CustomDrawerItem = ({Icon, labels, index, drawerItemState, styles, setDrawerItemState, navigation}: {
     Icon: any,
@@ -72,18 +73,20 @@ const DrawerLayout = () => {
     return <SafeAreaContextProvider>
         <RescuerContextProvider>
             <DeviceContextProvider>
-                <LocationContextProvider>
-                    <GestureHandlerRootView style={{flex: 1}}>
-                        <Drawer initialRouteName={"Home"} drawerContent={CustomDrawerContent} screenOptions={{
-                            drawerType: 'permanent', headerShown: false, drawerStyle: {
-                                borderRightColor: colors.latte.colors.surface1.hex,
-                                borderRightWidth: 1,
-                                backgroundColor: colors.latte.colors.mantle.hex,
-                                width: '16%',
-                            },
-                        }}/>
-                    </GestureHandlerRootView>
-                </LocationContextProvider>
+                <RescuerLocationContextProvider>
+                    <LocationContextProvider>
+                        <GestureHandlerRootView style={{flex: 1}}>
+                            <Drawer initialRouteName={"Home"} drawerContent={CustomDrawerContent} screenOptions={{
+                                drawerType: 'permanent', headerShown: false, drawerStyle: {
+                                    borderRightColor: colors.latte.colors.surface1.hex,
+                                    borderRightWidth: 1,
+                                    backgroundColor: colors.latte.colors.mantle.hex,
+                                    width: '16%',
+                                },
+                            }}/>
+                        </GestureHandlerRootView>
+                    </LocationContextProvider>
+                </RescuerLocationContextProvider>
             </DeviceContextProvider>
         </RescuerContextProvider>
     </SafeAreaContextProvider>

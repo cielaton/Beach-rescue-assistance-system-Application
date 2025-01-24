@@ -12,7 +12,7 @@ export const get_device_by_device_id = async (deviceId: string) => {
 
 export const change_device_status =
     async (deviceId: string, status: boolean) => {
-        return await fetch(process.env.EXPO_PUBLIC_PRIVATE_SERVER + "/device/activeStatus/",
+        return await fetch(process.env.EXPO_PUBLIC_PRIVATE_SERVER + "/device/activeStatus",
             {
                 method: 'POST',
                 headers: {

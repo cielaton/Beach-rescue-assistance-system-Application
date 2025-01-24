@@ -4,15 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="13764756-3e34-46c6-abcd-d77f4754d3a1" name="Changes" comment="[Device Management] Updated the Rescue Team to display the info from Rescuer Context. Create a reusable active icon component and updated all the usages.">
+    <list default="true" id="13764756-3e34-46c6-abcd-d77f4754d3a1" name="Changes" comment="[Device Context] Added the function to request device status change and appropriate use effect for it.&#10;Changed all the function name inside context file to camel case">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/context/Device.context.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/api/context/Device.context.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/context/Location.context.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/api/context/Location.context.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/context/Rescuer.context.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/api/context/Rescuer.context.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/context/RescuerLocation.context.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/api/context/RescuerLocation.context.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/context/SafeArea.context.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/api/context/SafeArea.context.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/fetch/device.ts" beforeDir="false" afterPath="$PROJECT_DIR$/api/fetch/device.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/(drawer)/Device/UserDevice/TableRow.UserDevice.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(drawer)/Device/UserDevice/TableRow.UserDevice.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/(drawer)/Device/UserDevice/UserDevice.Device.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(drawer)/Device/UserDevice/UserDevice.Device.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -128,15 +124,7 @@
       <workItem from="1737532879923" duration="831000" />
       <workItem from="1737599221965" duration="7517000" />
       <workItem from="1737689284666" duration="2484000" />
-      <workItem from="1737694482848" duration="1684000" />
-    </task>
-    <task id="LOCAL-00006" summary="[Navigation] Added other screens and appropriate navigation button">
-      <option name="closed" value="true" />
-      <created>1736658098110</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1736658098110</updated>
+      <workItem from="1737694482848" duration="2419000" />
     </task>
     <task id="LOCAL-00007" summary="[Navigation] Created a custom drawer for the drawer navigator">
       <option name="closed" value="true" />
@@ -522,7 +510,15 @@
       <option name="project" value="LOCAL" />
       <updated>1737691514830</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="[Device Context] Added the function to request device status change and appropriate use effect for it.&#10;Changed all the function name inside context file to camel case">
+      <option name="closed" value="true" />
+      <created>1737696237368</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1737696237368</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -540,7 +536,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="[Device] Start to work on the Device info section, added the heading and some information components" />
     <MESSAGE value="[Device] Formed the basic structure and style of the device info section, will need to improve a bit" />
     <MESSAGE value="[Device] Refactored the DeviceInfo component" />
     <MESSAGE value="[Device] Moved the rescue team to another file" />
@@ -565,6 +560,7 @@
     <MESSAGE value="[Home] Added the rescuer locations on the Home map" />
     <MESSAGE value="[Rescuer &amp; Rescuer Location] Added the function to filter out the inactive rescuer when fetching location and the function to sort the inactive rescuer" />
     <MESSAGE value="[Device Management] Updated the Rescue Team to display the info from Rescuer Context. Create a reusable active icon component and updated all the usages." />
-    <option name="LAST_COMMIT_MESSAGE" value="[Device Management] Updated the Rescue Team to display the info from Rescuer Context. Create a reusable active icon component and updated all the usages." />
+    <MESSAGE value="[Device Context] Added the function to request device status change and appropriate use effect for it.&#10;Changed all the function name inside context file to camel case" />
+    <option name="LAST_COMMIT_MESSAGE" value="[Device Context] Added the function to request device status change and appropriate use effect for it.&#10;Changed all the function name inside context file to camel case" />
   </component>
 </project>

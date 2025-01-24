@@ -14,7 +14,8 @@ const UserDevice = () => {
         <TableHeaderUserDevice/>
         <FlatList showsVerticalScrollIndicator={false} data={totalDevices} renderItem={
             ({item}) => {
-                return <TableRowUserDevice id={totalDevices.indexOf(item)} uptime={moment(item.dateAdded).fromNow()}
+                return <TableRowUserDevice deviceId={item.deviceId} id={totalDevices.indexOf(item)}
+                                           uptime={moment(item.dateAdded).fromNow()}
                                            active={item.isEnabled}/>
             }
         }/>

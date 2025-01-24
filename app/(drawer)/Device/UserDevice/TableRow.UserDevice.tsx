@@ -3,13 +3,17 @@ import {StyleSheet, Switch, Text, TouchableOpacity, View} from "react-native";
 import colors from "@/constants/colors.json";
 import {Trash} from "lucide-react-native";
 import {SelectedDeviceContext} from "@/api/context/SelectedDevice.context";
+import {DeviceContext} from "@/api/context/Device.context";
 
-const TableRowUserDevice = ({id, uptime, active}: {
+const TableRowUserDevice = ({deviceId, id, uptime, active}: {
+    deviceId: string,
     id: number,
     uptime: string,
     active: boolean,
 }) => {
     const {selectedDevice, setSelectedDevice}: any = useContext(SelectedDeviceContext)
+    const {sendDeviceStatusChangeRequest}: any = useContext(DeviceContext)
+
     const [enabled, setEnabled] = useState(active);
 
     return <TouchableOpacity onPress={() => {
@@ -35,6 +39,8 @@ const TableRowUserDevice = ({id, uptime, active}: {
                     trackColor={{false: colors.mocha.colors.base.hex, true: colors.mocha.colors.subtext1.hex}}
                     thumbColor={enabled ? colors.latte.colors.mauve.hex : colors.latte.colors.crust.hex}
                     onValueChange={() => {
+                        console.log("Pressed device id: ", deviceId)
+                        sendDeviceStatusChangeRequest(deviceId, !enabled)
                         setEnabled(!enabled);
                     }}
                     value={enabled}

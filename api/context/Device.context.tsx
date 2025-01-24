@@ -1,6 +1,6 @@
 import {createContext, useContext, useEffect, useState} from "react";
 import {SafeAreaContext} from "@/api/context/SafeArea.context";
-import {get_device_by_safe_area} from "@/api/fetch/device";
+import {change_device_status, get_device_by_safe_area} from "@/api/fetch/device";
 
 export const DeviceContext = createContext({})
 
@@ -19,10 +19,14 @@ export const DeviceContextProvider = ({children}: { children: any }) => {
     // Get the safe area value
     const {safeArea, isLoadingSafeArea}: any = useContext(SafeAreaContext);
 
+    // State variables to handler device load
     const [totalDevices, setTotalDevices] = useState([])
     const [isLoadingDevice, setIsLoadingDevice] = useState(true)
 
-    const send_device_request_by_safe_area = () => {
+    // State variables to handler device status change
+    const [isLoadingDeviceChange, setIsLoadingDeviceChange] = useState(true)
+
+    const sendDeviceRequestBySafeArea = () => {
         setIsLoadingDevice(true);
         get_device_by_safe_area(safeArea.safeAreaId)
             .then(result => {
@@ -36,13 +40,37 @@ export const DeviceContextProvider = ({children}: { children: any }) => {
         })
     };
 
+    // Load the device when safe area has done fetching
     useEffect(() => {
         if (!isLoadingSafeArea) {
-            send_device_request_by_safe_area()
+            sendDeviceRequestBySafeArea()
         }
     }, [isLoadingSafeArea])
 
-    return <DeviceContext.Provider value={{totalDevices, isLoadingDevice}}>
+    const sendDeviceStatusChangeRequest = (deviceId: string, status: boolean) => {
+        setIsLoadingDeviceChange(true);
+        change_device_status(deviceId, status).then(result => {
+            console.log('[Device] Successfully request device status change');
+            if (typeof result.error !== "undefined") {
+                console.log('[Device] Failed to change device status');
+                console.log(result.error);
+                return
+            }
+            setIsLoadingDeviceChange(false);
+        }).catch(error => {
+            console.log('[Device] Failed to change device status');
+            console.log(error);
+        })
+    }
+
+    // Reload the device when device status changed
+    useEffect(() => {
+        if (!isLoadingDeviceChange) {
+            sendDeviceRequestBySafeArea();
+        }
+    }, [isLoadingDeviceChange])
+
+    return <DeviceContext.Provider value={{totalDevices, isLoadingDevice, sendDeviceStatusChangeRequest}}>
         {children}
     </DeviceContext.Provider>
 }

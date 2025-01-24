@@ -11,7 +11,7 @@ export const LocationContextProvider = ({children}: { children: any }) => {
     const [locations, setLocations] = useState([])
     const [isLoadingLocations, setIsLoadingLocations] = useState(true)
 
-    const send_location_request = () => {
+    const sendLocationRequest = () => {
         setIsLoadingLocations(true);
         get_location(totalDevices.map((item: any) => item.deviceId))
             .then(result => {
@@ -26,7 +26,7 @@ export const LocationContextProvider = ({children}: { children: any }) => {
 
     useEffect(() => {
         if (!isLoadingDevice) {
-            send_location_request()
+            sendLocationRequest()
         }
     }, [isLoadingDevice])
 

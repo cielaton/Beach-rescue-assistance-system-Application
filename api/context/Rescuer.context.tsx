@@ -21,7 +21,7 @@ export const RescuerContextProvider = ({children}: { children: any }) => {
     const [totalRescuers, setTotalRescuers] = useState([])
     const [isLoadingRescuer, setIsLoadingRescuer] = useState(true)
 
-    const send_rescuer_request_by_safe_area = () => {
+    const sendRescuerRequestBySafeArea = () => {
         setIsLoadingRescuer(true);
         get_rescuer_by_safe_area(safeArea.safeAreaId)
             .then(result => {
@@ -37,7 +37,7 @@ export const RescuerContextProvider = ({children}: { children: any }) => {
 
     useEffect(() => {
         if (!isLoadingSafeArea) {
-            send_rescuer_request_by_safe_area()
+            sendRescuerRequestBySafeArea()
         }
     }, [isLoadingSafeArea])
 

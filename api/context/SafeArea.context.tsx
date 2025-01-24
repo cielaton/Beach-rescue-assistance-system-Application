@@ -7,7 +7,7 @@ export const SafeAreaContextProvider = ({children}: { children: any }) => {
     const [safeArea, setSafeArea] = useState({})
     const [isLoadingSafeArea, setIsLoadingSafeArea] = useState(true)
 
-    const send_safe_area_request = () => {
+    const sendSafeAreaRequest = () => {
         setIsLoadingSafeArea(true);
         safe_area_request('abcd')
             .then(result => {
@@ -21,7 +21,7 @@ export const SafeAreaContextProvider = ({children}: { children: any }) => {
     };
 
     useEffect(() => {
-        send_safe_area_request();
+        sendSafeAreaRequest();
     }, [])
 
     return <SafeAreaContext.Provider value={{

@@ -4,13 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="13764756-3e34-46c6-abcd-d77f4754d3a1" name="Changes" comment="[Rescuer &amp; Rescuer Location] Added the function to filter out the inactive rescuer when fetching location and the function to sort the inactive rescuer">
-      <change afterPath="$PROJECT_DIR$/components/ActiveStatusIcon.tsx" afterDir="false" />
+    <list default="true" id="13764756-3e34-46c6-abcd-d77f4754d3a1" name="Changes" comment="[Device Management] Updated the Rescue Team to display the info from Rescuer Context. Create a reusable active icon component and updated all the usages.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/(drawer)/Device/RescueTeam/RescueTeam.Device.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(drawer)/Device/RescueTeam/RescueTeam.Device.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/(drawer)/Device/RescueTeam/TableRow.RescueTeam.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(drawer)/Device/RescueTeam/TableRow.RescueTeam.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/(drawer)/Home/RescueTeam.Home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(drawer)/Home/RescueTeam.Home.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/(drawer)/Status/TableRow.Status.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(drawer)/Status/TableRow.Status.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/context/Device.context.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/api/context/Device.context.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/context/Location.context.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/api/context/Location.context.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/context/Rescuer.context.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/api/context/Rescuer.context.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/context/RescuerLocation.context.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/api/context/RescuerLocation.context.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/context/SafeArea.context.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/api/context/SafeArea.context.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/fetch/device.ts" beforeDir="false" afterPath="$PROJECT_DIR$/api/fetch/device.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/(drawer)/Device/UserDevice/TableRow.UserDevice.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(drawer)/Device/UserDevice/TableRow.UserDevice.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -125,15 +127,8 @@
       <workItem from="1737519623438" duration="10359000" />
       <workItem from="1737532879923" duration="831000" />
       <workItem from="1737599221965" duration="7517000" />
-      <workItem from="1737689284666" duration="2145000" />
-    </task>
-    <task id="LOCAL-00005" summary="[Navigation] Finally get the drawer navigation working with some configurations">
-      <option name="closed" value="true" />
-      <created>1736608382313</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1736608382313</updated>
+      <workItem from="1737689284666" duration="2484000" />
+      <workItem from="1737694482848" duration="1684000" />
     </task>
     <task id="LOCAL-00006" summary="[Navigation] Added other screens and appropriate navigation button">
       <option name="closed" value="true" />
@@ -519,7 +514,15 @@
       <option name="project" value="LOCAL" />
       <updated>1737606140427</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary="[Device Management] Updated the Rescue Team to display the info from Rescuer Context. Create a reusable active icon component and updated all the usages.">
+      <option name="closed" value="true" />
+      <created>1737691514830</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1737691514830</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -537,7 +540,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="[Device] Added a table row component for the user device along with mockup device data and minor optimization for table heading" />
     <MESSAGE value="[Device] Start to work on the Device info section, added the heading and some information components" />
     <MESSAGE value="[Device] Formed the basic structure and style of the device info section, will need to improve a bit" />
     <MESSAGE value="[Device] Refactored the DeviceInfo component" />
@@ -562,6 +564,7 @@
     <MESSAGE value="[Rescuer Location] Added the rescuer location context and wrap it outside the root component" />
     <MESSAGE value="[Home] Added the rescuer locations on the Home map" />
     <MESSAGE value="[Rescuer &amp; Rescuer Location] Added the function to filter out the inactive rescuer when fetching location and the function to sort the inactive rescuer" />
-    <option name="LAST_COMMIT_MESSAGE" value="[Rescuer &amp; Rescuer Location] Added the function to filter out the inactive rescuer when fetching location and the function to sort the inactive rescuer" />
+    <MESSAGE value="[Device Management] Updated the Rescue Team to display the info from Rescuer Context. Create a reusable active icon component and updated all the usages." />
+    <option name="LAST_COMMIT_MESSAGE" value="[Device Management] Updated the Rescue Team to display the info from Rescuer Context. Create a reusable active icon component and updated all the usages." />
   </component>
 </project>

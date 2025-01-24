@@ -19,7 +19,7 @@ export const RescuerLocationContextProvider = ({children}: { children: any }) =>
     const [rescuerLocations, setRescuerLocations] = useState([])
     const [isLoadingRescuerLocations, setIsLoadingRescuerLocations] = useState(true);
 
-    const send_rescuer_location_request = () => {
+    const sendRescuerLocationRequest = () => {
         setIsLoadingRescuerLocations(true);
         // Get locations based on the array of rescuer Ids
         get_rescuer_locations(totalRescuers.map((item: any) => item.rescuerId))
@@ -35,7 +35,7 @@ export const RescuerLocationContextProvider = ({children}: { children: any }) =>
 
     useEffect(() => {
         if (!isLoadingRescuer) {
-            send_rescuer_location_request();
+            sendRescuerLocationRequest();
         }
     }, [isLoadingRescuer])
 

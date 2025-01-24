@@ -10,7 +10,7 @@ const TableRowUserDevice = ({id, uptime, active}: {
     active: boolean,
 }) => {
     const {selectedDevice, setSelectedDevice}: any = useContext(SelectedDeviceContext)
-    const [enabled, setEnabled] = useState(true);
+    const [enabled, setEnabled] = useState(active);
 
     return <TouchableOpacity onPress={() => {
         setSelectedDevice({

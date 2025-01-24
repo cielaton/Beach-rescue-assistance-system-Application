@@ -1,6 +1,7 @@
 import {StyleSheet, Text, View} from "react-native";
-import {Check, ShieldPlus} from "lucide-react-native";
+import {ShieldPlus} from "lucide-react-native";
 import colors from "@/constants/colors.json";
+import ActiveStatusIcon from "@/components/ActiveStatusIcon";
 
 const TableRowRescueTeam = ({id, name, role, active}: { id: number, name: string, role: string, active: boolean }) => {
     return <View style={styles.rescuerContainer}>
@@ -21,9 +22,7 @@ const TableRowRescueTeam = ({id, name, role, active}: { id: number, name: string
             </View>
         </View>
         <View style={styles.activeWrapper}>
-            <View style={styles.active}>
-                <Check size={15} color={colors.latte.colors.base.hex}/>
-            </View>
+            <ActiveStatusIcon isActive={active}/>
         </View>
     </View>
 }
@@ -83,14 +82,7 @@ const styles = StyleSheet.create({
         color: colors.latte.colors.red.hex
     },
     activeWrapper: {
-        width: '12%'
-    },
-    active: {
-        height: '60%',
-        aspectRatio: 1,
-        borderRadius: '100%',
-        backgroundColor: colors.latte.colors.green.hex,
+        width: '12%',
         justifyContent: 'center',
-        alignItems: 'center'
-    }
+    },
 })

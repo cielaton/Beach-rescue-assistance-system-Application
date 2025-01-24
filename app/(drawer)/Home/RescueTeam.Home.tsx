@@ -1,9 +1,10 @@
 import {FlatList, StyleSheet, Text, View} from "react-native";
 import colors from "@/constants/colors.json";
-import {Check, ShieldPlus, X} from "lucide-react-native";
+import {ShieldPlus} from "lucide-react-native";
 import VerticalSeparator from "@/components/VerticalSeparator";
 import {useContext} from "react";
 import {RescuerContext} from "@/api/context/Rescuer.context";
+import ActiveStatusIcon from "@/components/ActiveStatusIcon";
 
 const Rescuer = ({name, role, active}: { name: string, role: string, active: boolean }) => {
     return <View style={styles.rescuerContainer}>
@@ -16,14 +17,7 @@ const Rescuer = ({name, role, active}: { name: string, role: string, active: boo
                 <Text style={styles.rescuerRole}>{role}</Text>
             </View>
         </View>
-        {active ?
-            <View style={styles.rescuerActive}>
-                <Check size={15} color={colors.latte.colors.base.hex}/>
-            </View> :
-            <View style={styles.rescuerInactive}>
-                <X size={15} color={colors.latte.colors.base.hex}/>
-            </View>
-        }
+        <ActiveStatusIcon isActive={active}/>
     </View>
 }
 const RescueTeamHome = () => {
@@ -91,20 +85,4 @@ const styles = StyleSheet.create({
         lineHeight: 17,
         color: colors.mocha.colors.base.hex
     },
-    rescuerActive: {
-        height: '60%',
-        aspectRatio: 1,
-        borderRadius: '100%',
-        backgroundColor: colors.latte.colors.green.hex,
-        justifyContent: 'center',
-        alignItems: 'center'
-    },
-    rescuerInactive: {
-        height: '60%',
-        aspectRatio: 1,
-        borderRadius: '100%',
-        backgroundColor: colors.latte.colors.red.hex,
-        justifyContent: 'center',
-        alignItems: 'center'
-    }
 })

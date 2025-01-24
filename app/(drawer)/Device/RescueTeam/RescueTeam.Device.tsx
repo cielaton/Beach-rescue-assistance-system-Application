@@ -3,6 +3,8 @@ import colors from "@/constants/colors.json";
 import TableHeaderRescueTeam from "@/app/(drawer)/Device/RescueTeam/TableHeader.RescueTeam";
 import TableRowRescueTeam from "@/app/(drawer)/Device/RescueTeam/TableRow.RescueTeam";
 import VerticalSeparator from "@/components/VerticalSeparator";
+import {useContext} from "react";
+import {RescuerContext} from "@/api/context/Rescuer.context";
 
 
 const data = Array.from(Array(10).keys()).map((item) => {
@@ -15,12 +17,16 @@ const data = Array.from(Array(10).keys()).map((item) => {
 })
 
 const RescueTeamDevice = () => {
+
+    const {totalRescuers}: any = useContext(RescuerContext)
+
     return <View style={styles.container}>
         <Text style={styles.heading}>Rescue Team</Text>
         <TableHeaderRescueTeam/>
-        <FlatList showsVerticalScrollIndicator={false} data={data} renderItem={({item}) => {
+        <FlatList showsVerticalScrollIndicator={false} data={totalRescuers} renderItem={({item, index}) => {
             return <View>
-                <TableRowRescueTeam id={item.id} name={item.name} role={item.role} active={item.active}/>
+                <TableRowRescueTeam key={item.rescuerId} id={index} name={item.name} role={item.role}
+                                    active={item.isEnabled}/>
                 <VerticalSeparator height={5}/>
             </View>
         }}/>

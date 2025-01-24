@@ -1,6 +1,6 @@
 import {StyleSheet, Text, TouchableOpacity, View} from "react-native";
 import colors from "@/constants/colors.json";
-import {Check, X} from "lucide-react-native";
+import ActiveStatusIcon from "@/components/ActiveStatusIcon";
 
 const TableRowStatus = ({id, longitude, latitude, active, uptime, boundary}: {
     id: number,
@@ -24,14 +24,7 @@ const TableRowStatus = ({id, longitude, latitude, active, uptime, boundary}: {
             <Text>{latitude}</Text>
         </View>
         <View style={styles.active}>
-            {active ?
-                <View style={styles.activeCircle}>
-                    <Check size={15} color={colors.latte.colors.base.hex}/>
-                </View> :
-                <View style={styles.inactiveCircle}>
-                    <X size={15} color={colors.latte.colors.base.hex}/>
-                </View>
-            }
+            <ActiveStatusIcon isActive={active}/>
         </View>
         <View style={styles.uptime}>
             <Text>{uptime}</Text>
@@ -55,6 +48,7 @@ const styles = StyleSheet.create({
     },
     device: {
         width: '8%',
+        justifyContent: 'center'
     },
     deviceCircle: {
         height: '70%',
@@ -71,33 +65,23 @@ const styles = StyleSheet.create({
     },
     longitude: {
         width: '15%',
+        justifyContent: 'center'
     },
     latitude: {
         width: '15%',
+        justifyContent: 'center'
     },
     active: {
         width: '8%',
-    },
-    activeCircle: {
-        height: '50%',
-        aspectRatio: 1,
-        borderRadius: '100%',
-        backgroundColor: colors.latte.colors.green.hex,
         justifyContent: 'center',
-        alignItems: 'center'
-    },
-    inactiveCircle: {
-        height: '50%',
-        aspectRatio: 1,
-        borderRadius: '100%',
-        backgroundColor: colors.latte.colors.red.hex,
-        justifyContent: 'center',
-        alignItems: 'center'
+        height: '90%'
     },
     uptime: {
         width: '20%',
+        justifyContent: 'center'
     },
     boundary: {
         width: '10%',
+        justifyContent: 'center'
     }
 })

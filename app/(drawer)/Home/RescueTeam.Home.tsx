@@ -1,13 +1,23 @@
-import {FlatList, StyleSheet, Text, View} from "react-native";
+import {FlatList, StyleSheet, Text, TouchableOpacity, View} from "react-native";
 import colors from "@/constants/colors.json";
 import {ShieldPlus} from "lucide-react-native";
 import VerticalSeparator from "@/components/VerticalSeparator";
 import {useContext} from "react";
 import {RescuerContext} from "@/api/context/Rescuer.context";
 import ActiveStatusIcon from "@/components/ActiveStatusIcon";
+import {SelectedRescuerContext} from "@/api/context/SelectedRescuer.context";
 
-const Rescuer = ({name, role, active}: { name: string, role: string, active: boolean }) => {
-    return <View style={styles.rescuerContainer}>
+const Rescuer = ({rescuerId, name, role, active}: {
+    rescuerId: string,
+    name: string,
+    role: string,
+    active: boolean
+}) => {
+    const {setSelectedRescuerId}: any = useContext(SelectedRescuerContext)
+
+    return <TouchableOpacity onPress={() => {
+        setSelectedRescuerId(rescuerId)
+    }} style={styles.rescuerContainer}>
         <View style={styles.rescuerIconAndNameWrapper}>
             <View style={styles.rescuerIconContainer}>
                 <ShieldPlus size={20} color={colors.latte.colors.red.hex}/>
@@ -18,7 +28,7 @@ const Rescuer = ({name, role, active}: { name: string, role: string, active: boo
             </View>
         </View>
         <ActiveStatusIcon isActive={active}/>
-    </View>
+    </TouchableOpacity>
 }
 const RescueTeamHome = () => {
     const {totalRescuers}: any = useContext(RescuerContext)
@@ -28,7 +38,7 @@ const RescueTeamHome = () => {
         <VerticalSeparator height={10}/>
         <FlatList showsVerticalScrollIndicator={false} data={totalRescuers} renderItem={({item}) => {
             return <View>
-                <Rescuer name={item.name} role={item.role} active={item.isEnabled}/>
+                <Rescuer rescuerId={item.rescuerId} name={item.name} role={item.role} active={item.isEnabled}/>
                 <VerticalSeparator height={15}/>
             </View>
         }} style={{

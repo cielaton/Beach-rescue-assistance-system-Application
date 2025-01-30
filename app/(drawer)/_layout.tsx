@@ -10,6 +10,7 @@ import {SafeAreaContextProvider} from "@/api/context/SafeArea.context";
 import {LocationContextProvider} from "@/api/context/Location.context";
 import {RescuerContextProvider} from "@/api/context/Rescuer.context";
 import {RescuerLocationContextProvider} from "@/api/context/RescuerLocation.context";
+import {SelectedRescuerContextProvider} from "@/api/context/SelectedRescuer.context";
 
 const CustomDrawerItem = ({Icon, labels, index, drawerItemState, styles, setDrawerItemState, navigation}: {
     Icon: any,
@@ -75,16 +76,18 @@ const DrawerLayout = () => {
             <DeviceContextProvider>
                 <RescuerLocationContextProvider>
                     <LocationContextProvider>
-                        <GestureHandlerRootView style={{flex: 1}}>
-                            <Drawer initialRouteName={"Home"} drawerContent={CustomDrawerContent} screenOptions={{
-                                drawerType: 'permanent', headerShown: false, drawerStyle: {
-                                    borderRightColor: colors.latte.colors.surface1.hex,
-                                    borderRightWidth: 1,
-                                    backgroundColor: colors.latte.colors.mantle.hex,
-                                    width: '16%',
-                                },
-                            }}/>
-                        </GestureHandlerRootView>
+                        <SelectedRescuerContextProvider>
+                            <GestureHandlerRootView style={{flex: 1}}>
+                                <Drawer initialRouteName={"Home"} drawerContent={CustomDrawerContent} screenOptions={{
+                                    drawerType: 'permanent', headerShown: false, drawerStyle: {
+                                        borderRightColor: colors.latte.colors.surface1.hex,
+                                        borderRightWidth: 1,
+                                        backgroundColor: colors.latte.colors.mantle.hex,
+                                        width: '16%',
+                                    },
+                                }}/>
+                            </GestureHandlerRootView>
+                        </SelectedRescuerContextProvider>
                     </LocationContextProvider>
                 </RescuerLocationContextProvider>
             </DeviceContextProvider>
